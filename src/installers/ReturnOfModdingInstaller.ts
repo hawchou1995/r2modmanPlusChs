@@ -1,5 +1,5 @@
 import path from "../providers/node/path/path";
-import { InstallRuleInstaller } from "./InstallRuleInstaller";
+import { InstallRulePluginInstaller } from "./InstallRulePluginInstaller";
 import { InstallArgs, PackageInstaller } from "./PackageInstaller";
 import FileWriteError from "../model/errors/FileWriteError";
 import { PackageLoader } from "../model/schema/ThunderstoreSchema";
@@ -70,7 +70,7 @@ export class ReturnOfModdingPluginInstaller implements PackageInstaller {
     _DATA = "plugins_data";
     _CONFIG = "config"
 
-    readonly installer = () => new InstallRuleInstaller({
+    readonly installer = () => new InstallRulePluginInstaller({
         gameName: "none" as any,  // This isn't actually used for actual installation but needs some value
         rules: [
             {
@@ -140,5 +140,13 @@ export class ReturnOfModdingPluginInstaller implements PackageInstaller {
             const solution = "Is the game still running?";
             throw FileWriteError.fromThrownValue(e, name, solution);
         }
-    };
+    }
+
+    async enable(args: InstallArgs) {
+        await this.installer().enable(args);
+    }
+
+    async disable(args: InstallArgs) {
+        await this.installer().disable(args);
+    }
 }

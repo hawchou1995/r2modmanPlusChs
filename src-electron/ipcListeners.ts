@@ -6,6 +6,7 @@ import path from 'path';
 
 let browserWindow: BrowserWindow;
 let app: App;
+const anyGlobal: any = global;
 
 export class Listeners {
     constructor(window: BrowserWindow, electronApp: App) {
@@ -19,6 +20,7 @@ ipcMain.on('get-browser-window', () => {
 });
 
 ipcMain.on('update-app', () => {
+    if (process.env.FLATPAK_ID) return;
     electronUpdater.autoUpdater.checkForUpdatesAndNotify();
 });
 
@@ -53,7 +55,7 @@ ipcMain.on('restart', () => {
 
 ipcMain.on('get-assets-path', () => {
     if (process.env.PROD) {
-        browserWindow.webContents.send('receive-assets-path', global.__statics);
+        browserWindow.webContents.send('receive-assets-path', anyGlobal.__statics);
     } else {
         browserWindow.webContents.send('receive-assets-path', 'src/statics/');
     }

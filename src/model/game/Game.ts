@@ -11,8 +11,9 @@ export default class Game {
     private readonly _exeName: string[];
     private readonly _dataFolderName: string;
     private readonly _thunderstoreUrl: string;
+    private readonly _thunderstoreIdentifier: string;
     private readonly _storePlatformMetadata: StorePlatformMetadata[];
-    private readonly _gameImage: string;
+    private readonly _iconUrl: string;
     private readonly _displayMode: GameSelectionDisplayMode;
     private readonly _instanceType: GameInstanceType;
     private readonly _packageLoader: PackageLoader;
@@ -21,10 +22,22 @@ export default class Game {
 
     private _activePlatform: StorePlatformMetadata;
 
-    constructor(displayName: string, internalFolderName: string, settingsIdentifier: string,
-                steamFolderName: string, exeName: string[], dataFolderName: string,
-                tsUrl: string, platforms: StorePlatformMetadata[], gameImage: string,
-                displayMode: GameSelectionDisplayMode, instanceType: GameInstanceType, packageLoader: PackageLoader, additionalSearchStrings?: string[]) {
+    constructor(
+        displayName: string,
+        internalFolderName: string,
+        settingsIdentifier: string,
+        steamFolderName: string,
+        exeName: string[],
+        dataFolderName: string,
+        tsUrl: string,
+        tsIdentifier: string,
+        platforms: StorePlatformMetadata[],
+        iconUrl: string,
+        displayMode: GameSelectionDisplayMode,
+        instanceType: GameInstanceType,
+        packageLoader: PackageLoader,
+        additionalSearchStrings?: string[],
+    ) {
 
         this._displayName = displayName;
         this._internalFolderName = internalFolderName;
@@ -33,9 +46,10 @@ export default class Game {
         this._exeName = exeName;
         this._dataFolderName = dataFolderName;
         this._thunderstoreUrl = tsUrl;
+        this._thunderstoreIdentifier = tsIdentifier;
         this._storePlatformMetadata = platforms;
-        this._activePlatform = platforms[0];
-        this._gameImage = gameImage;
+        this._activePlatform = platforms[0]!;
+        this._iconUrl = iconUrl;
         this._displayMode = displayMode;
         this._instanceType = instanceType;
         this._packageLoader = packageLoader;
@@ -70,6 +84,10 @@ export default class Game {
         return this._thunderstoreUrl;
     }
 
+    get thunderstoreIdentifier(): string {
+        return this._thunderstoreIdentifier;
+    }
+
     get storePlatformMetadata(): StorePlatformMetadata[] {
         return this._storePlatformMetadata;
     }
@@ -91,8 +109,8 @@ export default class Game {
         this._activePlatform = platform;
     }
 
-    get gameImage(): string {
-        return this._gameImage;
+    get iconUrl(): string {
+        return this._iconUrl;
     }
 
     get displayMode(): GameSelectionDisplayMode {

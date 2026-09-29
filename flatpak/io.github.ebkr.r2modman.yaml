@@ -1,0 +1,68 @@
+id: io.github.ebkr.r2modman
+runtime: org.freedesktop.Platform
+runtime-version: "25.08"
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node22
+base: org.electronjs.Electron2.BaseApp
+base-version: "25.08"
+command: io.github.ebkr.r2modman
+
+finish-args:
+  # Graphics
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+  # Flatpak spawn for steam deck
+  - --talk-name=org.freedesktop.Flatpak
+
+  # Network access
+  - --share=network
+  - --share=ipc
+
+  # File system to find Steam and games
+  - --filesystem=host
+  - --filesystem=~/.var/app/com.valvesoftware.Steam:rw
+  # - --filesystem=~/.local/share/Steam:rw
+
+modules:
+  - name: r2modmanPlus
+    buildsystem: simple
+    build-options:
+      build-args:
+        - --share=network
+      prepend-path: /run/build/r2modmanPlus/pnpm-standalone
+      append-path: /usr/lib/sdk/node22/bin
+      env:
+        npm_config_nodedir: /usr/lib/sdk/node22
+    sources:
+      - type: dir
+        path: ..
+        skip:
+          - .git
+          - node_modules
+          - dist
+          - flatpak/build
+          - flatpak/repo
+          - .flatpak-builder
+
+      - type: archive
+        url: https://github.com/pnpm/pnpm/releases/download/v11.8.0/pnpm-linux-x64.tar.gz
+        sha256: 86b9aa5362b06cc61f5e829e41614ffda2fbda09993b8e84176feaa3c97b9532
+        dest: pnpm-standalone
+        strip-components: 0
+
+    build-commands:
+      - chmod +x pnpm-standalone/pnpm
+      - pnpm install --frozen-lockfile
+      - pnpm build-linux-unpacked
+
+      - cp -r dist/electron/Packaged/linux-unpacked/* /app/
+
+      - install -Dm644 src/assets/icon/128x128.png /app/share/icons/hicolor/128x128/apps/io.github.ebkr.r2modman.png
+      - install -Dm644 src/assets/icon/256x256.png /app/share/icons/hicolor/256x256/apps/io.github.ebkr.r2modman.png
+
+      - install -Dm644 flatpak/io.github.ebkr.r2modman.desktop /app/share/applications/io.github.ebkr.r2modman.desktop
+      - install -Dm644 flatpak/io.github.ebkr.r2modman.metainfo.xml /app/share/metainfo/io.github.ebkr.r2modman.metainfo.xml
+      - install -Dm755 flatpak/io.github.ebkr.r2modman /app/bin/io.github.ebkr.r2modman

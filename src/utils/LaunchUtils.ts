@@ -13,10 +13,16 @@ import path from "../providers/node/path/path";
 import PathResolver from "../r2mm/manager/PathResolver";
 import appWindow from '../providers/node/app/app_window';
 import InteractionProvider from "../providers/ror2/system/InteractionProvider";
+import { TypedEventEmitter } from "./TypedEventEmitter";
 
 export enum LaunchMode { VANILLA, MODDED };
 
+export const OnGameLaunch = new TypedEventEmitter<{ game: Game, profile: Profile, mode: LaunchMode }>();
+
 export const launch = async (game: Game, profile: Profile, mode: LaunchMode): Promise<void> => {
+    // This event is used for analytics by TMM
+    await OnGameLaunch.emit({game, profile, mode});
+
     const error = (mode === LaunchMode.MODDED)
         ? await GameRunnerProvider.instance.startModded(game, profile)
         : await GameRunnerProvider.instance.startVanilla(game, profile);
@@ -35,6 +41,20 @@ export const linkProfileFiles = async (game: Game, profile: ImmutableProfile): P
     }
 
     await settings.setLinkedFiles(newLinkedFiles);
+};
+
+/**
+ * Non-fatal wrapper around linkProfileFiles.
+ * Syncs mod loader root files from the profile to the game directory.
+ * Failures are logged but do not propagate, so callers such as install/update flows
+ * won't fail if the game directory is not configured or the files are locked by a running game.
+ */
+export const syncProfileRootFiles = async (game: Game, profile: ImmutableProfile): Promise<void> => {
+    try {
+        await linkProfileFiles(game, profile);
+    } catch (e) {
+        console.warn('Failed to sync root mod files to game directory:', e);
+    }
 };
 
 export const setGameDirIfUnset = async (game: Game): Promise<void> => {

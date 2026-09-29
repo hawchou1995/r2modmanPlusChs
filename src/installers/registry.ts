@@ -1,8 +1,10 @@
 import { BepInExInstaller } from './BepInExInstaller';
 import { GodotMLInstaller } from './GodotMLInstaller';
+import { InstallRulePluginInstaller } from './InstallRulePluginInstaller';
 import { MelonLoaderInstaller } from './MelonLoaderInstaller';
+import { NoOpInstaller } from './NoOpInstaller';
 import { PackageInstaller } from './PackageInstaller';
-import { ShimloaderInstaller, ShimloaderPluginInstaller } from './ShimloaderInstaller';
+import { ShimloaderInstaller } from './ShimloaderInstaller';
 import { LovelyInstaller, LovelyPluginInstaller } from './LovelyInstaller';
 import { NorthstarInstaller } from './NorthstarInstaller';
 import { ReturnOfModdingInstaller, ReturnOfModdingPluginInstaller } from './ReturnOfModdingInstaller';
@@ -14,66 +16,36 @@ import { UMMInstaller } from './UMMInstaller';
 import { RivetInstaller, RivetPluginInstaller } from './RivetInstaller';
 import { PackageLoader } from '../model/schema/ThunderstoreSchema';
 
-/**
- * Package loader installer registry
- */
-type LoaderInstallers = Exclude<PackageLoader, PackageLoader.NONE>;
-
-const PackageLoaderInstallers: Record<LoaderInstallers, PackageInstaller> = {
+export const PackageLoaderInstallers: Record<PackageLoader, PackageInstaller> = {
     [PackageLoader.BEPINEX]: new BepInExInstaller(),
     [PackageLoader.BEPISLOADER]: new BepisLoaderInstaller(),
     [PackageLoader.GDWEAVE]: new GDWeaveInstaller(),
     [PackageLoader.GODOTML]: new GodotMLInstaller(),
     [PackageLoader.LOVELY]: new LovelyInstaller(),
     [PackageLoader.MELONLOADER]: new MelonLoaderInstaller(),
+    [PackageLoader.NONE]: new NoOpInstaller(),
     [PackageLoader.NORTHSTAR]: new NorthstarInstaller(),
     [PackageLoader.RECURSIVE_MELONLOADER]: new RecursiveMelonLoaderInstaller(),
     [PackageLoader.RETURN_OF_MODDING]: new ReturnOfModdingInstaller(),
+    [PackageLoader.RIVET]: new RivetInstaller(),
     [PackageLoader.SHIMLOADER]: new ShimloaderInstaller(),
     [PackageLoader.UMM]: new UMMInstaller(),
-    [PackageLoader.RIVET]: new RivetInstaller(),
 };
 
-export function getPackageLoaderInstaller(loader: PackageLoader): PackageInstaller|null {
-    if (loader === PackageLoader.NONE) {
-        return null;
-    }
+const installRulePluginInstaller = new InstallRulePluginInstaller();
 
-    return PackageLoaderInstallers[loader];
-}
-
-
-/**
- * Plugin installer registry
- */
-type InstallRuleInstallers = PackageLoader.BEPINEX | PackageLoader.BEPISLOADER | PackageLoader.GODOTML | PackageLoader.MELONLOADER | PackageLoader.NORTHSTAR | PackageLoader.UMM;
-type PluginInstallers = Exclude<PackageLoader, InstallRuleInstallers>;
-
-const PluginInstallers: Record<PluginInstallers, PackageInstaller> = {
+export const PluginInstallers: Record<PackageLoader, PackageInstaller> = {
+    [PackageLoader.BEPINEX]: installRulePluginInstaller,
+    [PackageLoader.BEPISLOADER]: installRulePluginInstaller,
     [PackageLoader.GDWEAVE]: new GDWeavePluginInstaller(),
+    [PackageLoader.GODOTML]: installRulePluginInstaller,
     [PackageLoader.LOVELY]: new LovelyPluginInstaller(),
+    [PackageLoader.MELONLOADER]: installRulePluginInstaller,
+    [PackageLoader.NORTHSTAR]: installRulePluginInstaller,
     [PackageLoader.NONE]: new DirectCopyInstaller(),
     [PackageLoader.RECURSIVE_MELONLOADER]: new RecursiveMelonLoaderPluginInstaller(),
     [PackageLoader.RETURN_OF_MODDING]: new ReturnOfModdingPluginInstaller(),
-    [PackageLoader.SHIMLOADER]: new ShimloaderPluginInstaller(),
     [PackageLoader.RIVET]: new RivetPluginInstaller(),
+    [PackageLoader.SHIMLOADER]: installRulePluginInstaller,
+    [PackageLoader.UMM]: installRulePluginInstaller,
 };
-
-function isPluginInstaller(loader: PackageLoader): loader is PluginInstallers {
-    return !(
-        loader === PackageLoader.BEPINEX ||
-        loader === PackageLoader.BEPISLOADER ||
-        loader === PackageLoader.GODOTML ||
-        loader === PackageLoader.MELONLOADER ||
-        loader === PackageLoader.NORTHSTAR ||
-        loader === PackageLoader.UMM
-    );
-}
-
-export function getPluginInstaller(loader: PackageLoader): PackageInstaller|null {
-    if (!isPluginInstaller(loader)) {
-        return null;
-    }
-
-    return PluginInstallers[loader];
-}

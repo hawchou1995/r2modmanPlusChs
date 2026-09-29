@@ -6,14 +6,14 @@
     <!-- Content -->
     <div id="profile-body">
         <hero
-            title="Profile selection"
-            subtitle="Profiles help to organise mods easily"
+            :title="t('translations.pages.profileSelection.pageTitle.title')"
+            :subtitle="t('translations.pages.profileSelection.pageTitle.subtitle')"
             heroType="primary"
         />
         <div class='notification'>
             <div class="container">
                 <i class='fas fa-long-arrow-alt-left margin-right' />
-                <strong><a @click="backToGameSelection">Back to game selection</a></strong>
+                <strong><a @click="backToGameSelection">{{ t('translations.pages.profileSelection.actions.backToGameSelection') }}</a></strong>
             </div>
         </div>
         <div id="profile-list" class="margin-top">
@@ -34,15 +34,21 @@
         <div id="profile-actions">
             <div class="container" id="profile-actions-container">
                 <div id="profile-actions-row">
-                    <button class="button is-info" @click="moveToNextScreen()">Select profile</button>
+                    <button class="button is-info" @click="moveToNextScreen()">
+                        {{ t('translations.pages.profileSelection.actions.select') }}
+                    </button>
                     <button class="button" @click="openRenameProfileModal()" :disabled="activeProfileName === 'Default'">
-                        Rename
+                        {{ t('translations.pages.profileSelection.actions.rename') }}
                     </button>
                     <button class="button" @click="openCreateProfileModal()">
-                        Create new
+                        {{ t('translations.pages.profileSelection.actions.create') }}
                     </button>
-                    <button class="button" @click="openImportProfileModal()">Import / Update</button>
-                    <button class="button is-danger" @click="openDeleteProfileModal()">Delete</button>
+                    <button class="button" @click="openImportProfileModal()">
+                        {{ t('translations.pages.profileSelection.actions.import') }}
+                    </button>
+                    <button class="button is-danger" @click="openDeleteProfileModal()">
+                        {{ t('translations.pages.profileSelection.actions.delete') }}
+                    </button>
                 </div>
             </div>
         </div>
@@ -61,9 +67,11 @@ import { computed, onMounted } from 'vue';
 import { getStore } from '../providers/generic/store/StoreProvider';
 import { State } from '../store';
 import { useRouter } from 'vue-router';
+import {useI18n} from "vue-i18n";
 
 const store = getStore<State>();
 const router = useRouter();
+const { t } = useI18n();
 
 const profileList = computed(() => store.state.profiles.profileList);
 const activeProfileName = computed(() => store.getters['profile/activeProfileName']);
@@ -113,8 +121,6 @@ async function backToGameSelection() {
 }
 
 onMounted( async () => {
-    console.debug("Profiles view entered with active game", store.state.activeGame.settingsIdentifier);
-
     const settings = await store.getters.settings;
     await settings.load();
 
@@ -140,13 +146,13 @@ onMounted( async () => {
     flex-direction: column;
     overflow-y: auto;
     max-height: 100vh;
+    flex: 1;
 }
 
 #profile-list {
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow-y: hidden;
 }
 
 #profile-list-content {
@@ -154,18 +160,20 @@ onMounted( async () => {
     flex: 1;
     flex-direction: column;
     width: 100%;
-    overflow-y: auto;
 }
 
 #profile-actions {
-    flex: 1;
-    margin: 2rem;
+    position: sticky;
+    bottom: 0;
+    padding: 2rem;
     justify-items: center;
     display: block;
+    background-color: var(--background);
 }
 
 #profile-actions-container {
     display: flex;
+    width: 100%;
 }
 
 #profile-actions-row {
@@ -175,6 +183,6 @@ onMounted( async () => {
     gap: 1rem;
     justify-content: start;
     text-align: left;
-    width: 100vw;
+    width: 100%;
 }
 </style>

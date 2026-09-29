@@ -1,11 +1,9 @@
-import { InstallArgs, PackageInstaller } from "./PackageInstaller";
+import { InstallArgs, PackageInstaller, uninstallModLoader } from "./PackageInstaller";
 import path from "../providers/node/path/path";
 import FsProvider from "../providers/generic/file/FsProvider";
 import FileTree from "../model/file/FileTree";
 import FileUtils from "../utils/FileUtils";
 import R2Error from "../model/errors/R2Error";
-import { InstallRuleInstaller } from "./InstallRuleInstaller";
-import { TrackingMethod } from "../model/schema/ThunderstoreSchema";
 
 export class ShimloaderInstaller implements PackageInstaller {
     /**
@@ -21,10 +19,14 @@ export class ShimloaderInstaller implements PackageInstaller {
         const fs = FsProvider.instance;
         const fileRelocations = new Map<string, string>();
 
+        const entries = await fs.readdir(path.join(packagePath, "UE4SS"));
+        const findUE4SS = (name: string) =>
+            entries.find(f => f.toLowerCase() === name.toLowerCase()) ?? name;
+
         const targets = [
             ["dwmapi.dll", "dwmapi.dll"],
-            ["UE4SS/ue4ss.dll", "ue4ss.dll"],
-            ["UE4SS/UE4SS-settings.ini", "UE4SS-settings.ini"],
+            [`UE4SS/${findUE4SS("ue4ss.dll")}`, "ue4ss.dll"],
+            [`UE4SS/${findUE4SS("UE4SS-settings.ini")}`, "UE4SS-settings.ini"],
         ];
 
         const ue4ssTree = await FileTree.buildFromLocation(path.join(packagePath, "UE4SS/Mods"));
@@ -39,13 +41,13 @@ export class ShimloaderInstaller implements PackageInstaller {
         }
 
         for (const targetPath of targets) {
-            const absSrc = path.join(packagePath, targetPath[0]);
-            const absDest = profile.joinToProfilePath(targetPath[1]);
+            const absSrc = path.join(packagePath, targetPath[0]!);
+            const absDest = profile.joinToProfilePath(targetPath[1]!);
 
             await FileUtils.ensureDirectory(path.dirname(absDest));
             await fs.copyFile(absSrc, absDest);
 
-            fileRelocations.set(absSrc, targetPath[1]);
+            fileRelocations.set(absSrc, targetPath[1]!);
         }
 
         // The config subdir needs to be created for shimloader (it will get cranky if it's not there).
@@ -54,36 +56,8 @@ export class ShimloaderInstaller implements PackageInstaller {
             await fs.mkdirs(configDir);
         }
     }
-}
 
-export class ShimloaderPluginInstaller implements PackageInstaller {
-    readonly installer = () => new InstallRuleInstaller({
-        gameName: "none" as any,  // This isn't acutally used for actual installation but needs some value
-        rules: [
-            {
-                route: path.join("shimloader", "mod"),
-                isDefaultLocation: true,
-                defaultFileExtensions: [],
-                trackingMethod: TrackingMethod.SUBDIR,
-                subRoutes: [],
-            },
-            {
-                route: path.join("shimloader", "pak"),
-                defaultFileExtensions: [],
-                trackingMethod: TrackingMethod.SUBDIR,
-                subRoutes: [],
-            },
-            {
-                route: path.join("shimloader", "cfg"),
-                defaultFileExtensions: [],
-                trackingMethod: TrackingMethod.NONE,
-                subRoutes: [],
-            }
-        ],
-        relativeFileExclusions: null
-    });
-
-    async install(args: InstallArgs) {
-        await this.installer().install(args);
+    async uninstall(args: InstallArgs) {
+        await uninstallModLoader(args.mod, args.profile);
     }
 }

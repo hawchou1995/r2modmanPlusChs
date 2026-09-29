@@ -2,12 +2,12 @@
     <ModalCard id="download-mod-version-select-modal" :is-active="isOpen" :can-close="true" v-if="thunderstoreMod !== null" @close-modal="closeModal()">
         <template v-slot:header>
             <h2 class='modal-title' v-if="thunderstoreMod !== null">
-                Select a version of {{thunderstoreMod.getName()}} to download
+                {{ t('translations.modals.downloadModVersionSelect.title', { modName: thunderstoreMod.getName()}) }}
             </h2>
         </template>
         <template v-slot:body>
-            <p>It's recommended to select the latest version of all mods.</p>
-            <p>Using outdated versions may cause problems.</p>
+            <p>{{ t('translations.modals.downloadModVersionSelect.content.recommendedDisclaimer') }}</p>
+            <p>{{ t('translations.modals.downloadModVersionSelect.content.outdatedModsAdvice') }}</p>
             <br/>
             <div class="columns is-vcentered">
                 <template v-if="currentVersion !== null">
@@ -31,22 +31,24 @@
                 </div>
                 <div class="column is-narrow">
                     <span class="tag is-dark" v-if='selectedVersion === null'>
-                        You need to select a version
+                        {{ t('translations.modals.downloadModVersionSelect.tags.select') }}
                     </span>
                     <span class="tag is-success" v-else-if='recommendedVersion === selectedVersion'>
-                        {{selectedVersion}} is the recommended version
+                        {{ t('translations.modals.downloadModVersionSelect.tags.recommended', { version: selectedVersion }) }}
                     </span>
                     <span class="tag is-success" v-else-if='versionNumbers[0] === selectedVersion'>
-                        {{selectedVersion}} is the latest version
+                        {{ t('translations.modals.downloadModVersionSelect.tags.latest', { version: selectedVersion }) }}
                     </span>
                     <span class="tag is-danger" v-else-if='versionNumbers[0] !== selectedVersion'>
-                        {{selectedVersion}} is an outdated version
+                        {{ t('translations.modals.downloadModVersionSelect.tags.outdated', { version: selectedVersion }) }}
                     </span>
                 </div>
             </div>
         </template>
         <template v-slot:footer>
-            <button class="button is-info" @click="downloadMod">Download with dependencies</button>
+            <button class="button is-info" @click="downloadMod">
+                {{ t('translations.modals.downloadModVersionSelect.download') }}
+            </button>
         </template>
     </ModalCard>
 </template>
@@ -66,8 +68,10 @@ import { State } from '../../store';
 import ThunderstoreMod from '../../model/ThunderstoreMod';
 import ThunderstoreCombo from "../../model/ThunderstoreCombo";
 import { InstallMode } from "../../utils/DependencyUtils";
+import { useI18n } from 'vue-i18n';
 
 const store = getStore<State>();
+const { t } = useI18n();
 
 const versionNumbers = ref<string[]>([]);
 const recommendedVersion = ref<string | null>(null);
@@ -83,18 +87,19 @@ function closeModal() {
 
 watch(() => store.state.modals.downloadModalMod, async () => {
     currentVersion.value = null;
-    if (thunderstoreMod.value !== null) {
+    const mod = thunderstoreMod.value;
+    if (mod !== null) {
         const activeGame: Game = store.state.activeGame;
-        selectedVersion.value = thunderstoreMod.value.getLatestVersion();
+        selectedVersion.value = mod.getLatestVersion();
         recommendedVersion.value = null;
 
         versionNumbers.value = await PackageDb.getPackageVersionNumbers(
             activeGame.internalFolderName,
-            thunderstoreMod.value.getFullName()
+            mod.getFullName()
         );
 
-        const foundRecommendedVersion = MOD_LOADER_VARIANTS[activeGame.internalFolderName]
-            .find(value => value.packageName === thunderstoreMod.value!.getFullName());
+        const foundRecommendedVersion = MOD_LOADER_VARIANTS[activeGame.internalFolderName]!
+            .find(value => value.packageName === mod.getFullName());
 
         if (foundRecommendedVersion && foundRecommendedVersion.recommendedVersion) {
             recommendedVersion.value = foundRecommendedVersion.recommendedVersion.toString();
@@ -110,7 +115,7 @@ watch(() => store.state.modals.downloadModalMod, async () => {
 
         const modListResult = await ProfileModList.getModList(store.getters['profile/activeProfile'].asImmutableProfile());
         if (!(modListResult instanceof R2Error)) {
-            const manifestMod = modListResult.find((local: ManifestV2) => local.getName() === thunderstoreMod.value!.getFullName());
+            const manifestMod = modListResult.find((local: ManifestV2) => local.getName() === mod.getFullName());
             if (manifestMod !== undefined) {
                 currentVersion.value = manifestMod.getVersionNumber().toString();
             }
@@ -148,8 +153,8 @@ async function downloadHandler(tsMod: ThunderstoreMod, tsVersion: ThunderstoreVe
     closeModal();
 
     const combos = [new ThunderstoreCombo()];
-    combos[0].setMod(tsMod);
-    combos[0].setVersion(tsVersion);
+    combos[0]!.setMod(tsMod);
+    combos[0]!.setVersion(tsVersion);
 
     await store.dispatch('download/downloadAndInstallCombos', {
         combos,

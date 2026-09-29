@@ -1,3 +1,6 @@
+@use "scheme/variables" as *;
+@use "quasar.variables" as *;
+
 // fix color vars that we can't override
 html {
     background-color: $scheme-background;
@@ -40,6 +43,13 @@ select {
 
 .menu-list a.is-active {
     color: $menu-item-active-color;
+}
+
+.menu-label {
+    color: var(--menu-label-color, #7a7a7a);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
 }
 
 .pagination-link.is-current {
@@ -447,6 +457,9 @@ code {
     }
     &--top {
         padding-top: 1rem;
+        &-none {
+            padding-top: 0;
+        }
     }
 }
 
@@ -513,4 +526,12 @@ code {
             background: $scrollbar-background-hover;
         }
     }
+}
+
+.v-popper__popper {
+    z-index: 100 !important;
+}
+
+.modal-background {
+    backdrop-filter: blur(5px);
 }

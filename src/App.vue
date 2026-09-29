@@ -1,8 +1,39 @@
 <template>
     <div>
-        <main>
-            <router-view v-if="visible"/>
-        </main>
+        <div class="main-wrapper">
+            <main>
+                <div class="router" v-if="visible">
+                    <router-view />
+                </div>
+            </main>
+            <div id="activity-bar">
+                <div id="activity-bar__left"></div>
+                <div id="activity-bar__right">
+                    <div>
+                        <ActivityDropdown>
+                            <button type="button" class="activity-bar__action"
+                                :aria-label="`${t('metadata.name', 0, { locale })}`"
+                            >
+                                <i class="fas fa-globe-europe"></i> {{ locale }}
+                            </button>
+                            <template #popper>
+                            <ul class="menu-list">
+                                <li v-for="lang in availableLocales" :key="`locale-select-${lang}`">
+                                    <a v-close-popper @click="() => LocaleManager.save(lang)">
+                                        <div class="locale-list__item">
+                                            <span class="locale-list__text">{{ lang }} ({{ t('metadata.name', 0, {locale: lang}) }})</span>
+                                            <span class="locale-list__divider"></span>
+                                            <span class="locale-list__tag tag is-warning" v-if="((messages[lang]?.metadata as any).wip || '').length > 0">{{ t('metadata.wip', 0, {locale: lang}) }}</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            </template>
+                        </ActivityDropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
         <ErrorModal />
     </div>
 </template>
@@ -52,12 +83,18 @@ import { NodeFsImplementation } from './providers/node/fs/NodeFsImplementation';
 import { useRouter } from 'vue-router';
 import { ProtocolProviderImplementation } from './providers/generic/protocol/ProtocolProviderImplementation';
 import { provideProtocolImplementation } from './providers/generic/protocol/ProtocolProvider';
+import GameImageProvider, { provideGameImageImplementation } from './providers/generic/image/GameImageProvider';
+import { GameImageProviderImplementation } from './r2mm/image/GameImageProviderImpl';
+import { useI18n } from 'vue-i18n';
+import { ActivityDropdown } from './components/all';
+import LocaleManager from './r2mm/manager/LocaleManager';
 
 const store = baseStore;
 const router = useRouter();
 provideStoreImplementation(() => store);
 
 const quasar = useQuasar();
+const { t, locale, availableLocales, messages } = useI18n();
 
 document.addEventListener('auxclick', e => {
     const target = e.target! as any;
@@ -94,11 +131,14 @@ DataFolderProvider.provide(() => new DataFolderProviderImpl());
 PlatformInterceptorProvider.provide(() => new PlatformInterceptorImpl());
 
 provideProtocolImplementation(() => ProtocolProviderImplementation)
+provideGameImageImplementation(() => GameImageProviderImplementation);
 
 BindLoaderImpl.bind();
 
 onMounted(async () => {
     const settings: ManagerSettings = await store.dispatch('resetActiveGame');
+
+    await LocaleManager.apply();
 
     hookBackgroundUpdateThunderstoreModList(router);
     hookModInstallingViaProtocol(router);
@@ -127,6 +167,8 @@ onMounted(async () => {
 
         await FileUtils.ensureDirectory(PathResolver.APPDATA_DIR);
 
+        await GameImageProvider.init();
+
         await ThemeManager.apply();
 
         window.app.isApplicationPortable().then((isPortable: boolean) => {
@@ -154,5 +196,65 @@ html {
 main {
     display: grid;
     grid-template-rows: 100vh;
+}
+</style>
+
+<style lang="scss" scoped>
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+        overflow-y: hidden;
+        display: flex;
+    }
+}
+
+.router {
+    display: flex;
+    flex: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#activity-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+
+    &:has(> *) {
+        background-color: var(--preview-panel-background-color);
+        border-top: 1px solid var(--border, #e1e1e1);
+        padding: 0.25rem 0.75rem;
+        gap: 0.5rem;
+        overflow: hidden;
+    }
+
+    &__left {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.375rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+.locale-list__item {
+    display: flex;
+    place-items: center;
+
+    .locale-list__divider {
+        flex: 1;
+    }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <div id="config-raw-editor">
         <div id="config-raw-editor-actions">
-            <button class="button is-info margin-right margin-right--half-width" @click="save">Save</button>
-            <button class="button is-danger" @click="cancel">Cancel</button>
+            <button class="button is-info margin-right margin-right--half-width" @click="save">{{ t('translations.pages.configEditor.editConfig.actions.save') }}</button>
+            <button class="button is-danger" @click="cancel">{{ t('translations.pages.configEditor.editConfig.actions.cancel') }}</button>
         </div>
         <div id="config-raw-editor-component-wrapper" class="notification margin-right">
             <QuillEditor
@@ -15,10 +15,13 @@
 import QuillEditor from "../QuillEditor.vue";
 import {ref} from "vue";
 import FsProvider from "../../providers/generic/file/FsProvider";
+import { useI18n } from 'vue-i18n';
 
 export type ConfigRawEditorProps = {
     filePath: string;
 }
+
+const { t } = useI18n();
 
 const props = defineProps<ConfigRawEditorProps>();
 const emits = defineEmits<{
@@ -51,22 +54,22 @@ function cancel() {
 
 <style lang="scss" scoped>
 #config-raw-editor {
-    height: 100%;
-    overflow-y: hidden;
-    display: grid;
-    grid-template-rows: min-content 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 #config-raw-editor-actions {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     text-align: right;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 2rem 1rem 0;
+    background-color: var(--background);
 }
 
 #config-raw-editor-component-wrapper {
-    overflow-y: auto;
     margin-bottom: 1rem;
 }
 </style>

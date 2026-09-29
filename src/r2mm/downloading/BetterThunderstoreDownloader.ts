@@ -1,4 +1,3 @@
-import StatusEnum from '../../model/enums/StatusEnum';
 import axios, { AxiosResponse } from 'axios';
 import ThunderstoreCombo from '../../model/ThunderstoreCombo';
 import ZipExtract from '../installing/ZipExtract';
@@ -24,7 +23,7 @@ export default class BetterThunderstoreDownloader extends ThunderstoreDownloader
             throw new R2Error('No mods to download', 'An empty list of mods was passed to the downloader');
         }
 
-        let modInProgressName = combos[0].getMod().getName();
+        let modInProgressName = combos[0]!.getMod().getName();
         let finishedModsDownloadedSize = 0;
 
         const singleModProgressCallback = (downloadedBytes: number, status: DownloadStatusEnum, err: R2Error | null) => {
@@ -61,6 +60,7 @@ export default class BetterThunderstoreDownloader extends ThunderstoreDownloader
             try {
                 const response = await this._downloadCombo(comboInProgress, singleModProgressCallback);
                 await this._saveDownloadResponse(response, comboInProgress, singleModProgressCallback);
+                await DownloadUtils.markAsDownloadedFromOnline(comboInProgress);
             } catch(e) {
                 throw R2Error.fromThrownValue(e, `Failed to download mod ${comboInProgress.getVersion().getFullName()}`);
             }

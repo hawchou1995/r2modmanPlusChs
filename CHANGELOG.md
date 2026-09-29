@@ -1,3 +1,236 @@
+### 3.2.20
+
+#### Multiple Languages (i18n)
+
+We now support multiple languages! Add support for your language by contributing to: https://github.com/ebkr/r2modmanPlus/
+
+Our initial supported languages on 3.2.20 are:
+- English (like always)
+- French
+
+French is still considered a work in progress, but is fully functional. The only exception currently are error message translations, which are still in English.
+
+#### Performance Improvements
+
+- Fixed a regression caused in 3.2.19 by the feature that warns when mods are removed.
+- Massively improved performance when installing/uninstalling mods in large profiles.
+- Faster mod sorting
+
+#### New Additions
+
+- Refresh indicator to show when the mod list is updating + the percentage of progress.
+
+#### Games Added
+
+- AI LIMIT
+- Among Us 3D
+- BOMBANANA!
+- Cast N Chill
+- Cult of PiN
+- Cuphead
+- Electoral Carnage
+- Holdfast: Nations At War
+- How to Fish
+- Inferno Protocol
+- Last Pirates: Die Together
+- Lazy Witch's Factory
+- Limitless Survivor
+- Moonlighter
+- Nucleares
+- Offscreen
+- Re:Legend
+- Rhythm Doctor
+- Stonewards
+- Survival: Fountain of Youth
+- The Message from Deep Space
+- The Sexy Brutale
+- Tiny Rogues
+- Tunguska: The Visitation
+
+### 3.2.19
+
+#### Flatpak Remote Repository
+
+With an incredible amount of work and support from [@TB516](https://github.com/TB516), the Flatpak remote repository is now available for Linux users.
+
+This now means that Flatpak users can finally update r2modman like a normal Flatpak application.
+Updates via Flatpak are also much smaller and quicker to install.
+
+You can install it via the included `flatpak-setup.sh` script or manually with these commands:
+
+```bash
+flatpak remote-add --if-not-exists r2builds https://r2builds.ebkr.dev/flatpak/r2modman.flatpakrepo
+flatpak install -y r2builds io.github.ebkr.r2modman
+```
+
+The README has more detailed setup information for Flatpaks if needed.
+
+#### Improvements
+
+- Redesigned settings screen, including:
+    - Fewer items / actions are grouped together.
+    - Smarter search.
+- Peak memory usage reduction.
+- You will now be informed when packages you have installed are removed from Thunderstore.
+- Improved online mod list searching:
+    - "Default" has been renamed to "Relevance"
+    - Relevance searches now bump results matching name/author exactly.
+- Spaces and underscores are now ignored in search results, meaning you don't need to remember the exact package name.
+- Folders containing special characters can now be opened via settings.
+
+
+#### Games Added
+
+- A Dance of Fire and Ice
+- Big Walk
+- Block Story
+- Cairn
+- Grain Rot
+- Home Safety Hotline
+- Inside the Backrooms
+- Iron Nest
+- LumenTale: Memories of Trey
+- Shift At Midnight
+- Sineus Arena Survivors
+- Slip & Skid
+- Stick Fight: The Game
+- SUPERHOT
+- SUPERHOT: MIND CONTROL DELETE
+- The Lab
+- Waterpark Simulator
+- Wobbly Life
+
+### 3.2.18
+
+#### Performance Improvements
+
+- There have been significant performance improvements to memory usage. Idle memory usage results in ~400 MB total on Lethal Company for example.
+- Additionally CPU cycles have been reduced, resulting in faster completion of tasks and a lower power usage.
+
+#### Visual Tweaks
+
+- "New" row added to Game Selection
+- "Hero" elements (title blocks), are no longer fixed to the top of the screen.
+- "Start modded" action no longer changes size when going to the Online section.
+
+#### Games Added
+
+- Bloons TD 6
+- Blue Prince
+- Book of Travels
+- Burglin' Gnomes
+- Everything is Crab
+- Goblin Cleanup
+- GRIME
+- Lucky Shot
+- MECCHA CHAMELEON
+- Paralives
+- Pikuniku
+- Romestead
+
+### 3.2.17
+
+#### Automatic Game Additions
+
+For the longest time you have needed to update the manager in order to get new games, and each game addition required me
+to create a release.
+
+It's automatic now. You'll be able to access any **supported** games given your mod manager version.
+
+
+### 3.2.16
+
+#### UI Changes
+
+- The "Game Selection" screen has been re-styled to:
+  - Add a favourites group
+  - Make game names easier to find and read
+  - Make the favourite action always visible
+  - Allow games to still be accessible if made hidden at any point in the future
+-
+
+#### Fixes
+
+- Titanfall 2 / Northstar can be launched from the manager again (thanks to @TB516)
+- Various style alignment issues fixed
+- Beetleball no longer recommends a fixed version of MelonLoader
+- Essential mod loader files are now synced on mod installs rather than on "Start modded" (thanks to @NikkelM)
+- Scrap Mechanic launch fixes (thanks to @BenMcAvoy)
+
+#### Games added
+
+- Sledding game
+- Hot Lava
+- Angry Birds VR: Isle of Pigs
+- Project Gorgon
+- Puttler
+- Island Market Simulator
+- SIDE EFFECTS
+- Modulus: Factory Automation
+- Roadside Research
+- MINOS
+- BRUTALISTICK VR
+- Super Psycho Baseball
+- Getting Over It
+- The Spell Brigade
+- Vampire Crawlers
+- Voodoo Fishin
+- Project Arrhythmia renamed to Afterbeat
+- Cave Crawlers
+- Gamble with your Friends
+- Miside Zero
+- Lootun
+- Windrose
+
+### 3.2.15
+
+#### UI Changes
+
+- Includes a bottom bar which allows for:
+  - Faster game changing
+  - Faster profile switching
+  - Easier access to profile exporting
+- The "Start" action is now more distinguishable
+- Navbar sections are clearer
+
+#### Games added
+
+- Astroneer
+- Deadly Delivery
+- Granny: Chapter Two
+- Soulcalibur VI
+- A Gentleman's Dispute
+- Super Battle Golf
+- Cursed Words
+- Ducks Can Drive
+- Gorilla Tag
+- Jump Scare Mansion
+- Pit of Goblin
+- Very Very Valet
+- Cryo
+- Crawlspace
+- Big Ambitions
+
+#### Fixes
+
+- Actions on the profile selection screen are properly aligned
+- Several fixes for mod installation behaviours
+
+### 3.2.14
+#### Games added
+- Carrier Deck
+- Factory Planner
+- On-Together: Virtual Co-Working
+- Project Arrhythmia
+- Stolen Realm
+- The Farmer Was Replaced
+- YAPYAP
+
+#### Fixes
+- On Together automatically resolves the correct folder
+- Fixed linux_wrapper implementation that supports UMM. (Thanks to @alexneargarder)
+- Miside image fixed (Thanks to @Hythera)
+
 ### 3.2.13
 #### Fixes
 - Linux behaviour used to automatically set WINEDLLOVERRIDES. This has been restored for now.

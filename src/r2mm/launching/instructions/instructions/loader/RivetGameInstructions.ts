@@ -1,7 +1,7 @@
 import GameInstructionGenerator from "../GameInstructionGenerator";
 import { GameInstruction } from "../../GameInstructions";
-import Game from "src/model/game/Game";
-import Profile from "src/model/Profile";
+import Game from "../../../../../model/game/Game";
+import Profile from "../../../../../model/Profile";
 
 export default class RivetGameInstructions extends GameInstructionGenerator {
     /*
@@ -25,8 +25,12 @@ export default class RivetGameInstructions extends GameInstructionGenerator {
 
     public async generate(game: Game, profile: Profile): Promise<GameInstruction> {
         return {
-            moddedParameters: `-rivetEnable true -rivetTarget ${profile.joinToProfilePath("Rivet", "Loader.dll")} -rivetDirectory ${profile.joinToProfilePath("Rivet", "Mods")}`,
-            vanillaParameters: `-rivetEnable false`
+            moddedParameterList: [
+                '-rivetEnable', 'true',
+                '-rivetTarget', profile.joinToProfilePath("Rivet", "Loader.dll"),
+                '-rivetDirectory', profile.joinToProfilePath("Rivet", "Mods")
+            ],
+            vanillaParameterList: ['-rivetEnable', 'false']
         }
     }
 }

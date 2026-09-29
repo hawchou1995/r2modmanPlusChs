@@ -61,13 +61,13 @@ export default class GameInstructionParser {
                 const corePath = await FsProvider.instance.realpath(profile.joinToProfilePath("BepInEx", "core"));
                 const preloaderPath = path.join(corePath,
                     (await FsProvider.instance.readdir(corePath))
-                        .filter((x: string) => ["BepInEx.Unity.Mono.Preloader.dll", "BepInEx.Unity.IL2CPP.dll", "BepInEx.Preloader.dll", "BepInEx.IL2CPP.dll"].includes(x))[0]!);
+                        .filter((x: string) => ["BepInEx.Unity.Mono.Preloader.dll", "BepInEx.Unity.IL2CPP.dll", "BepInEx.Preloader.dll", "BepInEx.IL2CPP.dll", "BepInEx.NET.CoreCLR.dll"].includes(x))[0]!);
                 return `${isProton ? 'Z:' : ''}${preloaderPath}`;
             } else {
                 const corePath = profile.joinToProfilePath("BepInEx", "core");
                 return path.join(corePath,
                     (await FsProvider.instance.readdir(corePath))
-                        .filter((x: string) => ["BepInEx.Unity.Mono.Preloader.dll", "BepInEx.Unity.IL2CPP.dll", "BepInEx.Preloader.dll", "BepInEx.IL2CPP.dll"].includes(x))[0]!);
+                        .filter((x: string) => ["BepInEx.Unity.Mono.Preloader.dll", "BepInEx.Unity.IL2CPP.dll", "BepInEx.Preloader.dll", "BepInEx.IL2CPP.dll", "BepInEx.NET.CoreCLR.dll"].includes(x))[0]!);
             }
         } catch (e) {
             const err: Error = e as Error;
@@ -80,7 +80,7 @@ export default class GameInstructionParser {
             return await FsProvider.instance.realpath(profile.joinToProfilePath("unstripped_corlib"));
         } catch (e) {
             const err: Error = e as Error;
-            return new R2Error("Unable to resolver Corelibs folder", `"unstripped_corlib" folder failed. No such folder exists for path: ${Profile.getActiveProfile().getProfilePath()}.\nReason: ${err.message}`, null);
+            return new R2Error("Unable to resolve Corelibs folder", `"unstripped_corlib" folder failed. No such folder exists for path: ${Profile.getActiveProfile().getProfilePath()}.\nReason: ${err.message}`, null);
         }
     }
 

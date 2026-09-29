@@ -110,7 +110,7 @@ export default class DarwinGameDirectoryResolver extends GameDirectoryResolverPr
             }
             const err: Error = e as Error;
             return new R2Error(
-                'An error occured whilst searching Steam library locations',
+                'An error occurred whilst searching Steam library locations',
                 err.message,
                 null
             )
@@ -129,7 +129,8 @@ export default class DarwinGameDirectoryResolver extends GameDirectoryResolverPr
             const folderName = parsedVdf.AppState.installdir;
             const riskOfRain2Path = path.join(manifestLocation, 'common', folderName);
             if (await fs.exists(riskOfRain2Path)) {
-                if (riskOfRain2Path.endsWith(path.dirname(GameManager.activeGame.steamFolderName))) {
+                const hasNestedSteamFolder = GameManager.activeGame.steamFolderName.startsWith(`${folderName}/`);
+                if (hasNestedSteamFolder) {
                     const dir = path.dirname(riskOfRain2Path);
                     return path.join(dir, GameManager.activeGame.steamFolderName);
                 } else {

@@ -1,37 +1,44 @@
 <template>
+    <ManagerActivityBar/>
     <div id="download-monitor-view">
-        <Hero title="Downloads" subtitle="Monitor progress of downloads" hero-type="primary"/>
+        <Hero
+            :title="t('translations.pages.downloadMonitor.title.text')"
+            :subtitle="t('translations.pages.downloadMonitor.title.subtitle')"
+            hero-type="primary"
+        />
         <template v-if="store.state.download.allDownloads.length === 0">
             <div class='text-center top'>
                 <div class="margin-right">
                     <br/>
-                    <h3 class='title is-4'>You don't have anything downloading.</h3>
+                    <h3 class='title is-4'>
+                        {{ t('translations.pages.downloadMonitor.state.hasNothing.inform') }}
+                    </h3>
                     <h4 class='subtitle is-5'>
-                        Click <router-link :to="{name: 'manager.online'}">here</router-link> to download something.
+                        <router-link :to="{name: 'manager.online'}">
+                            {{ t('translations.pages.downloadMonitor.state.hasNothing.action') }}
+                        </router-link>
                     </h4>
                 </div>
             </div>
         </template>
         <template v-else>
             <div class="download-monitor-action-buttons border-at-bottom">
-                <button
-                    class="button ghost"
-                    @click="store.commit('download/removeAllInactive')"
-                >
-                    <i class="fas fa-times mr-2" />Clear finished
+                <button class="button ghost" @click="store.commit('download/removeAllInactive')">
+                    <i class="fas fa-times mr-2" />
+                    {{ t('translations.pages.downloadMonitor.state.hasContent.action') }}
                 </button>
             </div>
             <div v-for="(downloadObject, index) of store.getters['download/profileDownloadsNewestFirst']" :key="`download-progress-${index}`">
-                <div class="container">
+                <div>
                     <div class="row no-wrap border-at-bottom pad pad--sides">
                         <div class="is-flex-grow-1 margin-right card is-shadowless">
-                            <p><strong>{{ downloadObject.initialMods.map(tsCombo => tsCombo.getUserFriendlyString()).join(", ") }}</strong></p>
+                            <p><strong>{{ downloadObject.initialMods.map((tsCombo: ThunderstoreCombo) => tsCombo.getUserFriendlyString()).join(", ") }}</strong></p>
 
                             <div class="row" v-if="downloadObject.status === DownloadStatusEnum.FAILED">
                                 <div class="col">
                                     <p>
                                         <i class="fas fa-exclamation-triangle" />
-                                        Download failed
+                                        {{ t('translations.pages.downloadMonitor.state.hasContent.downloadFailed') }}
                                     </p>
                                     <Progress
                                         :max='100'
@@ -45,7 +52,7 @@
                                 <div class="col">
                                     <p>
                                         <i class="fas fa-check" />
-                                        Download complete
+                                        {{ t('translations.pages.downloadMonitor.state.hasContent.downloadComplete') }}
                                     </p>
                                     <Progress
                                         :max='100'
@@ -60,15 +67,14 @@
                                 <div class="col">
                                     <p v-if="downloadObject.status === DownloadStatusEnum.DOWNLOADING">
                                         <i class="fas fa-download" />
-                                        Downloading: {{ downloadObject.modName }}
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.downloading', {modName: downloadObject.modName}) }}
                                     </p>
                                     <p v-else>
                                         <i class="fas fa-box-open" />
-                                        Extracting: {{ downloadObject.modName }}
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.extracting', {modName: downloadObject.modName}) }}
                                     </p>
                                     <p>
-                                        {{downloadObject.downloadProgress}}% of
-                                        {{FileUtils.humanReadableSize(downloadObject.totalDownloadSize)}}
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.progress', {progress: downloadObject.downloadProgress, totalSize: FileUtils.humanReadableSize(downloadObject.totalDownloadSize)}) }}
                                     </p>
                                     <Progress
                                         :max='100'
@@ -80,9 +86,9 @@
                                 <div class="col">
                                     <p>
                                         <i class="fas fa-cog" />
-                                        Installing:
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.installing', {modName: downloadObject.modName}) }}
                                     </p>
-                                    <p>Waiting for download to finish</p>
+                                    <p>{{ t('translations.pages.downloadMonitor.state.modProgress.waiting') }}</p>
                                     <Progress
                                         :max='100'
                                         :value='0'
@@ -95,17 +101,19 @@
                                 <div class="col">
                                     <p>
                                         <i class="fas fa-check" />
-                                        Download complete
+                                        {{ t('translations.pages.downloadMonitor.state.hasContent.downloadComplete', {modName: downloadObject.modName}) }}
                                     </p>
-                                    <p>100% of {{FileUtils.humanReadableSize(downloadObject.totalDownloadSize)}}</p>
+                                    <p>
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.progress', {progress: 100, totalSize: FileUtils.humanReadableSize(downloadObject.totalDownloadSize)}) }}
+                                    </p>
                                     <Progress :max='100' :value='100' :className="['is-success']" />
                                 </div>
                                 <div class="col">
                                     <p>
                                         <i class="fas fa-cog" spin />
-                                        Installing: {{ downloadObject.modName }}
+                                        {{ t('translations.pages.downloadMonitor.state.modProgress.installing', {modName: downloadObject.modName}) }}
                                     </p>
-                                    <p>{{Math.min(Math.floor(downloadObject.installProgress), 100)}}% complete</p>
+                                    <p>{{ t('translations.pages.downloadMonitor.state.modProgress.installProgress', { progress: Math.min(Math.floor(downloadObject.installProgress), 100) }) }}</p>
                                     <Progress
                                         :max='100'
                                         :value='downloadObject.installProgress'
@@ -118,7 +126,7 @@
                         <button
                             v-if="downloadObject.status === DownloadStatusEnum.FAILED"
                             class="button download-item-action-button"
-                            v-tooltip.left="'Retry'"
+                            v-tooltip.left="t('translations.pages.downloadMonitor.actions.retry')"
                             @click="store.dispatch('download/retryDownload', { download: downloadObject, hideModal: true })"
                         >
                             <i class="fas fa-redo redo-icon" />
@@ -126,7 +134,7 @@
                         <button
                             v-if="downloadObject.status === DownloadStatusEnum.FAILED || downloadObject.status === DownloadStatusEnum.INSTALLED"
                             class="button download-item-action-button"
-                            v-tooltip.left="'Remove'"
+                            v-tooltip.left="t('translations.pages.downloadMonitor.actions.remove')"
                             @click="store.commit('download/removeDownload', downloadObject)"
                         >
                             <i class="fas fa-times x-icon" />
@@ -146,13 +154,19 @@ import { DownloadStatusEnum } from '../model/enums/DownloadStatusEnum';
 import * as DownloadUtils from '../utils/DownloadUtils';
 import { getStore } from '../providers/generic/store/StoreProvider';
 import { State } from '../store';
+import { useI18n } from 'vue-i18n';
+import ManagerActivityBar from '../components/navigation/ManagerActivityBar.vue';
+import ThunderstoreCombo from '../model/ThunderstoreCombo';
 
 const store = getStore<State>();
+const { t } = useI18n();
 </script>
 
 <style lang="scss" scoped>
 #download-monitor-view {
     width: 100%;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .download-item-action-button {

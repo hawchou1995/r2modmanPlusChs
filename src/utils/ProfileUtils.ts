@@ -14,6 +14,7 @@ import ZipProvider from "../providers/generic/zip/ZipProvider";
 import ProfileInstallerProvider from "../providers/ror2/installing/ProfileInstallerProvider";
 import * as PackageDb from '../r2mm/manager/PackageDexieStore';
 import ProfileModList from "../r2mm/mods/ProfileModList";
+import { wasDownloadedFromOnline } from './DownloadUtils';
 
 export async function exportModsToCombos(
     exportMods: ExportMod[],
@@ -37,10 +38,17 @@ export async function exportModsToCombos(
 async function extractConfigsToImportedProfile(
     file: string,
     profileName: string,
-    progressCallback: (status: string) => void
+    progressCallback: (status: string, modName?: string, progress?: number) => void
 ) {
     const zipEntries = await ZipProvider.instance.getEntries(file);
     const excludedFiles = ["export.r2x", "mods.yml"];
+    const blockedExtensions = [
+        '.dll', '.exe', '.scr', '.com', '.pif',
+        '.bat', '.cmd', '.ps1', '.vbs', '.vbe',
+        '.js', '.jse', '.wsf', '.wsh', '.hta',
+        '.msi', '.msix', '.sys', '.drv', '.cpl',
+        '.ocx', '.lnk', '.reg', '.inf',
+    ];
 
     for (const [index, entry] of zipEntries.entries()) {
         if (!excludedFiles.includes(entry.entryName.toLowerCase())) {
@@ -50,11 +58,16 @@ async function extractConfigsToImportedProfile(
                 outputPath = path.join(outputPath, 'BepInEx');
             }
 
+            if (blockedExtensions.some(value => entry.entryName.toLowerCase().endsWith(value.toLowerCase()))) {
+                console.warn(`Unsafe file [${entry.entryName}] in import. Skipped.`);
+                continue;
+            }
+
             await ZipProvider.instance.extractEntryTo(file, entry.entryName, outputPath);
         }
 
         const progress = Math.floor(((index + 1) / zipEntries.length) * 100);
-        progressCallback(`Copying configs to profile: ${progress}%`);
+        progressCallback('copyingConfigsToProfile', undefined, progress);
     }
 }
 
@@ -85,6 +98,11 @@ export async function installModsToProfile(
 
             const manifestMod = new ManifestV2().fromThunderstoreCombo(comboMod);
 
+            // Mark as downloaded from online if the state file exists in cache
+            if (await wasDownloadedFromOnline(comboMod)) {
+                manifestMod.setOnlineSource(true);
+            }
+
             if (installedVersions.includes(manifestMod.getDependencyString())) {
                 continue;
             }
@@ -110,11 +128,10 @@ export async function installModsToProfile(
             }
 
             manifestMod.setInstalledAtTime(Number(new Date()));
-            ProfileModList.setIconPath(manifestMod, profile);
 
             if (typeof progressCallback === "function") {
                 const progress = Math.floor(((index + 1) / comboList.length) * 100);
-                progressCallback(`Copying mods to profile: ${progress}%`, modName, progress);
+                progressCallback('copyingModsToProfile', modName, progress);
             }
         }
     } catch (e) {
@@ -131,7 +148,7 @@ export async function installModsToProfile(
     throwForR2Error(preDiskSaveError || diskSaveError);
 
     if (typeof progressCallback === "function") {
-        progressCallback("Copying mods to profile: 100%", modName, 100);
+        progressCallback('copyingModsToProfile', modName, 100);
     }
 
     return profileMods;
@@ -189,12 +206,12 @@ export async function populateImportedProfile(
     profileName: string,
     isUpdate: boolean,
     zipPath: string,
-    progressCallback: (status: string) => void
+    progressCallback: (status: string, modName?: string, progress?: number) => void
 ) {
     const profile = new ImmutableProfile(isUpdate ? '_profile_update' : profileName);
 
     if (isUpdate) {
-        progressCallback('Cleaning up...');
+        progressCallback('cleaningUp');
         await FileUtils.recursiveRemoveDirectoryIfExists(profile.getProfilePath());
     }
 
@@ -208,7 +225,7 @@ export async function populateImportedProfile(
     }
 
     if (isUpdate) {
-        progressCallback('Applying changes to updated profile...');
+        progressCallback('applyingChanges');
         const targetProfile = new ImmutableProfile(profileName);
         await FileUtils.recursiveRemoveDirectoryIfExists(targetProfile.getProfilePath());
         await FsProvider.instance.rename(profile.getProfilePath(), targetProfile.getProfilePath());
