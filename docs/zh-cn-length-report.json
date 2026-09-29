@@ -1,0 +1,4130 @@
+{
+  "totals": 687,
+  "shorterOrEqual": 683,
+  "avgZh": 12.829694323144105,
+  "avgEn": 31.283842794759824,
+  "rows": [
+    {
+      "key": "translations.pages.settings.entries.language.searchTerms[2]",
+      "zhLength": 8,
+      "enLength": 6,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "key": "translations.pages.splash.menu.helpItems.faq",
+      "zhLength": 4,
+      "enLength": 3,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "key": "translations.pages.splash.content.faq.title",
+      "zhLength": 4,
+      "enLength": 3,
+      "ratio": 1.3333333333333333
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.progress",
+      "zhLength": 30,
+      "enLength": 26,
+      "ratio": 1.1538461538461537
+    },
+    {
+      "key": "translations.enums.launchType.PROTON",
+      "zhLength": 6,
+      "enLength": 6,
+      "ratio": 1
+    },
+    {
+      "key": "translations.modals.dependencyStrings.dependency",
+      "zhLength": 25,
+      "enLength": 25,
+      "ratio": 1
+    },
+    {
+      "key": "translations.platforms.STEAM",
+      "zhLength": 5,
+      "enLength": 5,
+      "ratio": 1
+    },
+    {
+      "key": "translations.platforms.STEAM_DIRECT",
+      "zhLength": 5,
+      "enLength": 5,
+      "ratio": 1
+    },
+    {
+      "key": "translations.platforms.ORIGIN",
+      "zhLength": 15,
+      "enLength": 15,
+      "ratio": 1
+    },
+    {
+      "key": "translations.platforms.XBOX_GAME_PASS",
+      "zhLength": 14,
+      "enLength": 14,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.display.byline",
+      "zhLength": 22,
+      "enLength": 22,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.author",
+      "zhLength": 11,
+      "enLength": 11,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.tabs.readme",
+      "zhLength": 6,
+      "enLength": 6,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.tabs.changelog",
+      "zhLength": 9,
+      "enLength": 9,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.manager.online.modList.mod.author",
+      "zhLength": 11,
+      "enLength": 11,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.searchTerms[2]",
+      "zhLength": 6,
+      "enLength": 6,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.searchTerms[3]",
+      "zhLength": 6,
+      "enLength": 6,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.searchTerms[4]",
+      "zhLength": 4,
+      "enLength": 4,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.searchTerms[1]",
+      "zhLength": 9,
+      "enLength": 9,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.searchTerms[2]",
+      "zhLength": 13,
+      "enLength": 13,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.searchTerms[3]",
+      "zhLength": 7,
+      "enLength": 7,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.searchTerms[1]",
+      "zhLength": 7,
+      "enLength": 7,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.splash.content.about.techStack.electron",
+      "zhLength": 8,
+      "enLength": 8,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.splash.content.about.techStack.node",
+      "zhLength": 6,
+      "enLength": 6,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.splash.content.about.techStack.vue",
+      "zhLength": 5,
+      "enLength": 5,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.splash.content.about.techStack.typescript",
+      "zhLength": 10,
+      "enLength": 10,
+      "ratio": 1
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.searchTerms[2]",
+      "zhLength": 15,
+      "enLength": 17,
+      "ratio": 0.8823529411764706
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.hiddenCount",
+      "zhLength": 25,
+      "enLength": 29,
+      "ratio": 0.8620689655172413
+    },
+    {
+      "key": "translations.pages.splash.content.main.externalInstallWithModManager",
+      "zhLength": 154,
+      "enLength": 180,
+      "ratio": 0.8555555555555555
+    },
+    {
+      "key": "translations.platforms.OCULUS_STORE",
+      "zhLength": 16,
+      "enLength": 19,
+      "ratio": 0.8421052631578947
+    },
+    {
+      "key": "translations.pages.splash.content.main.goToThunderstore",
+      "zhLength": 15,
+      "enLength": 18,
+      "ratio": 0.8333333333333334
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.enableSpecific",
+      "zhLength": 19,
+      "enLength": 23,
+      "ratio": 0.8260869565217391
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.title",
+      "zhLength": 14,
+      "enLength": 17,
+      "ratio": 0.8235294117647058
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[0]",
+      "zhLength": 14,
+      "enLength": 17,
+      "ratio": 0.8235294117647058
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.pinned.long",
+      "zhLength": 18,
+      "enLength": 22,
+      "ratio": 0.8181818181818182
+    },
+    {
+      "key": "translations.modals.downloadProgress.extractionProgress",
+      "zhLength": 31,
+      "enLength": 38,
+      "ratio": 0.8157894736842105
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.version.majorLabel",
+      "zhLength": 4,
+      "enLength": 5,
+      "ratio": 0.8
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.version.minorLabel",
+      "zhLength": 4,
+      "enLength": 5,
+      "ratio": 0.8
+    },
+    {
+      "key": "translations.pages.splash.content.about.title",
+      "zhLength": 12,
+      "enLength": 15,
+      "ratio": 0.8
+    },
+    {
+      "key": "translations.modals.downloadProgress.downloadProgress",
+      "zhLength": 31,
+      "enLength": 39,
+      "ratio": 0.7948717948717948
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.metadata.likes",
+      "zhLength": 11,
+      "enLength": 14,
+      "ratio": 0.7857142857142857
+    },
+    {
+      "key": "translations.pages.splash.pageTitle",
+      "zhLength": 14,
+      "enLength": 18,
+      "ratio": 0.7777777777777778
+    },
+    {
+      "key": "translations.modals.concerningPackage.title",
+      "zhLength": 12,
+      "enLength": 16,
+      "ratio": 0.75
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.downloadingModsWithGoal",
+      "zhLength": 33,
+      "enLength": 44,
+      "ratio": 0.75
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.installProgress",
+      "zhLength": 15,
+      "enLength": 20,
+      "ratio": 0.75
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.title",
+      "zhLength": 9,
+      "enLength": 12,
+      "ratio": 0.75
+    },
+    {
+      "key": "translations.modals.disableMod.title",
+      "zhLength": 14,
+      "enLength": 19,
+      "ratio": 0.7368421052631579
+    },
+    {
+      "key": "translations.pages.manager.actions.locateGameLaunchHelper",
+      "zhLength": 25,
+      "enLength": 34,
+      "ratio": 0.7352941176470589
+    },
+    {
+      "key": "translations.modals.gameRunning.launchingViaSteam",
+      "zhLength": 24,
+      "enLength": 33,
+      "ratio": 0.7272727272727273
+    },
+    {
+      "key": "translations.pages.splash.content.main.havingTrouble.serverLinkText",
+      "zhLength": 24,
+      "enLength": 33,
+      "ratio": 0.7272727272727273
+    },
+    {
+      "key": "translations.pages.help.general.gettingStarted.whereToFindMods",
+      "zhLength": 147,
+      "enLength": 205,
+      "ratio": 0.7170731707317073
+    },
+    {
+      "key": "translations.modals.launchArguments.moddedLabel",
+      "zhLength": 5,
+      "enLength": 7,
+      "ratio": 0.7142857142857143
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.searchTerms[1]",
+      "zhLength": 5,
+      "enLength": 7,
+      "ratio": 0.7142857142857143
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.searchTerms[2]",
+      "zhLength": 5,
+      "enLength": 7,
+      "ratio": 0.7142857142857143
+    },
+    {
+      "key": "translations.modListStatus.loadingLatestModList",
+      "zhLength": 38,
+      "enLength": 54,
+      "ratio": 0.7037037037037037
+    },
+    {
+      "key": "translations.modals.downloadProgress.states.installing",
+      "zhLength": 14,
+      "enLength": 20,
+      "ratio": 0.7
+    },
+    {
+      "key": "translations.modals.downloadProgress.installProgress",
+      "zhLength": 16,
+      "enLength": 23,
+      "ratio": 0.6956521739130435
+    },
+    {
+      "key": "translations.modals.gameRunning.starting",
+      "zhLength": 15,
+      "enLength": 22,
+      "ratio": 0.6818181818181818
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.metadata.downloads",
+      "zhLength": 15,
+      "enLength": 22,
+      "ratio": 0.6818181818181818
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.display.releasedAt",
+      "zhLength": 19,
+      "enLength": 28,
+      "ratio": 0.6785714285714286
+    },
+    {
+      "key": "translations.pages.manager.actions.locateGameExecutable",
+      "zhLength": 19,
+      "enLength": 28,
+      "ratio": 0.6785714285714286
+    },
+    {
+      "key": "translations.modals.downloadProgress.states.downloading",
+      "zhLength": 14,
+      "enLength": 21,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.extracting",
+      "zhLength": 14,
+      "enLength": 21,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.installing",
+      "zhLength": 14,
+      "enLength": 21,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.newBadge",
+      "zhLength": 2,
+      "enLength": 3,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.linuxSetup.hero.title",
+      "zhLength": 22,
+      "enLength": 33,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.all",
+      "zhLength": 2,
+      "enLength": 3,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.title",
+      "zhLength": 22,
+      "enLength": 33,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.searchTerms[0]",
+      "zhLength": 22,
+      "enLength": 33,
+      "ratio": 0.6666666666666666
+    },
+    {
+      "key": "translations.pages.splash.content.faq.startingWithMods.body",
+      "zhLength": 130,
+      "enLength": 198,
+      "ratio": 0.6565656565656566
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.tabs.dependencies",
+      "zhLength": 21,
+      "enLength": 32,
+      "ratio": 0.65625
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.actions.update",
+      "zhLength": 19,
+      "enLength": 29,
+      "ratio": 0.6551724137931034
+    },
+    {
+      "key": "translations.pages.error404.message",
+      "zhLength": 19,
+      "enLength": 29,
+      "ratio": 0.6551724137931034
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.display.installedAt",
+      "zhLength": 19,
+      "enLength": 29,
+      "ratio": 0.6551724137931034
+    },
+    {
+      "key": "translations.banners.updatableMods.text",
+      "zhLength": 102,
+      "enLength": 156,
+      "ratio": 0.6538461538461539
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.content.modUpdatedTo",
+      "zhLength": 25,
+      "enLength": 39,
+      "ratio": 0.6410256410256411
+    },
+    {
+      "key": "translations.modals.createProfile.tagStates.valid",
+      "zhLength": 25,
+      "enLength": 39,
+      "ratio": 0.6410256410256411
+    },
+    {
+      "key": "translations.modals.renameProfile.tagStates.valid",
+      "zhLength": 25,
+      "enLength": 39,
+      "ratio": 0.6410256410256411
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.tagStates.valid",
+      "zhLength": 25,
+      "enLength": 39,
+      "ratio": 0.6410256410256411
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.copyingConfigsToProfile",
+      "zhLength": 25,
+      "enLength": 39,
+      "ratio": 0.6410256410256411
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.copyingModsToProfile",
+      "zhLength": 23,
+      "enLength": 36,
+      "ratio": 0.6388888888888888
+    },
+    {
+      "key": "translations.modals.uninstallMod.title",
+      "zhLength": 14,
+      "enLength": 22,
+      "ratio": 0.6363636363636364
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.downloading",
+      "zhLength": 14,
+      "enLength": 22,
+      "ratio": 0.6363636363636364
+    },
+    {
+      "key": "translations.pages.splash.states.loadingLatestThunderstoreList",
+      "zhLength": 26,
+      "enLength": 41,
+      "ratio": 0.6341463414634146
+    },
+    {
+      "key": "translations.pages.gameSelection.noResults.empty.game",
+      "zhLength": 24,
+      "enLength": 38,
+      "ratio": 0.631578947368421
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.searchTerms[0]",
+      "zhLength": 12,
+      "enLength": 19,
+      "ratio": 0.631578947368421
+    },
+    {
+      "key": "translations.pages.gameSelection.noResults.empty.server",
+      "zhLength": 25,
+      "enLength": 40,
+      "ratio": 0.625
+    },
+    {
+      "key": "translations.pages.manager.navigation.activityBar.refreshingModList",
+      "zhLength": 20,
+      "enLength": 32,
+      "ratio": 0.625
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.metadata.categories",
+      "zhLength": 15,
+      "enLength": 24,
+      "ratio": 0.625
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.current",
+      "zhLength": 10,
+      "enLength": 16,
+      "ratio": 0.625
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.downloadingMods",
+      "zhLength": 18,
+      "enLength": 29,
+      "ratio": 0.6206896551724138
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.consoleCloses.ifPersists",
+      "zhLength": 42,
+      "enLength": 68,
+      "ratio": 0.6176470588235294
+    },
+    {
+      "key": "translations.modals.clearingGameDirectory.steamWillBeStarted",
+      "zhLength": 71,
+      "enLength": 115,
+      "ratio": 0.6173913043478261
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.nsfw",
+      "zhLength": 11,
+      "enLength": 18,
+      "ratio": 0.6111111111111112
+    },
+    {
+      "key": "translations.pages.settings.hero.subtitle",
+      "zhLength": 25,
+      "enLength": 41,
+      "ratio": 0.6097560975609756
+    },
+    {
+      "key": "translations.pages.manager.actions.locateSteamExecutable",
+      "zhLength": 14,
+      "enLength": 23,
+      "ratio": 0.6086956521739131
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.version.patchLabel",
+      "zhLength": 3,
+      "enLength": 5,
+      "ratio": 0.6
+    },
+    {
+      "key": "translations.modals.disableMod.actions.disableOnly",
+      "zhLength": 13,
+      "enLength": 22,
+      "ratio": 0.5909090909090909
+    },
+    {
+      "key": "translations.modals.importProfile.states.importCode.actions.loading",
+      "zhLength": 4,
+      "enLength": 7,
+      "ratio": 0.5714285714285714
+    },
+    {
+      "key": "translations.pages.linuxSetup.actions.copied",
+      "zhLength": 4,
+      "enLength": 7,
+      "ratio": 0.5714285714285714
+    },
+    {
+      "key": "translations.modals.associatedMods.title",
+      "zhLength": 17,
+      "enLength": 30,
+      "ratio": 0.5666666666666667
+    },
+    {
+      "key": "translations.platforms.EPIC_GAMES_STORE",
+      "zhLength": 9,
+      "enLength": 16,
+      "ratio": 0.5625
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.unableToFetchChangelog",
+      "zhLength": 14,
+      "enLength": 25,
+      "ratio": 0.56
+    },
+    {
+      "key": "translations.modals.importProfile.states.fileCodeSelection.actions.fromFile",
+      "zhLength": 5,
+      "enLength": 9,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.modals.importProfile.states.fileCodeSelection.actions.fromCode",
+      "zhLength": 5,
+      "enLength": 9,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.newlyAdded.games",
+      "zhLength": 5,
+      "enLength": 9,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.asFile",
+      "zhLength": 5,
+      "enLength": 9,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.asCode",
+      "zhLength": 5,
+      "enLength": 9,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.states.cacheDate",
+      "zhLength": 10,
+      "enLength": 18,
+      "ratio": 0.5555555555555556
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.title",
+      "zhLength": 16,
+      "enLength": 29,
+      "ratio": 0.5517241379310345
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.searchTerms[0]",
+      "zhLength": 16,
+      "enLength": 29,
+      "ratio": 0.5517241379310345
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.metadata.lastUpdated",
+      "zhLength": 11,
+      "enLength": 20,
+      "ratio": 0.55
+    },
+    {
+      "key": "translations.banners.managerUpdate.title",
+      "zhLength": 18,
+      "enLength": 33,
+      "ratio": 0.5454545454545454
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.newlyAdded.servers",
+      "zhLength": 6,
+      "enLength": 11,
+      "ratio": 0.5454545454545454
+    },
+    {
+      "key": "translations.pages.settings.entries.language.searchTerms[3]",
+      "zhLength": 6,
+      "enLength": 11,
+      "ratio": 0.5454545454545454
+    },
+    {
+      "key": "translations.modals.launchArguments.pleaseNote",
+      "zhLength": 82,
+      "enLength": 151,
+      "ratio": 0.543046357615894
+    },
+    {
+      "key": "translations.modals.failedToSetTheGameFolder.title",
+      "zhLength": 19,
+      "enLength": 35,
+      "ratio": 0.5428571428571428
+    },
+    {
+      "key": "translations.modals.uninstallMod.actions.uninstallOnly",
+      "zhLength": 13,
+      "enLength": 24,
+      "ratio": 0.5416666666666666
+    },
+    {
+      "key": "translations.pages.configEditor.hero.title",
+      "zhLength": 7,
+      "enLength": 13,
+      "ratio": 0.5384615384615384
+    },
+    {
+      "key": "translations.pages.manager.navigation.otherActions.configEditor",
+      "zhLength": 7,
+      "enLength": 13,
+      "ratio": 0.5384615384615384
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.someDisabled",
+      "zhLength": 31,
+      "enLength": 58,
+      "ratio": 0.5344827586206896
+    },
+    {
+      "key": "translations.pages.splash.content.main.exportProfile",
+      "zhLength": 117,
+      "enLength": 219,
+      "ratio": 0.5342465753424658
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.content.doNotClose",
+      "zhLength": 16,
+      "enLength": 30,
+      "ratio": 0.5333333333333333
+    },
+    {
+      "key": "translations.modListStatus.checkingForUpdates",
+      "zhLength": 25,
+      "enLength": 47,
+      "ratio": 0.5319148936170213
+    },
+    {
+      "key": "translations.pages.splash.states.checkingForThunderstoreUpdates",
+      "zhLength": 25,
+      "enLength": 47,
+      "ratio": 0.5319148936170213
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.description",
+      "zhLength": 26,
+      "enLength": 49,
+      "ratio": 0.5306122448979592
+    },
+    {
+      "key": "translations.modals.modFilter.allowNsfw",
+      "zhLength": 20,
+      "enLength": 38,
+      "ratio": 0.5263157894736842
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.subtitle",
+      "zhLength": 10,
+      "enLength": 19,
+      "ratio": 0.5263157894736842
+    },
+    {
+      "key": "translations.pages.help.updating.autoUpdates.promptToRunOldInstaller",
+      "zhLength": 43,
+      "enLength": 82,
+      "ratio": 0.524390243902439
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.states.lastUpdated",
+      "zhLength": 12,
+      "enLength": 23,
+      "ratio": 0.5217391304347826
+    },
+    {
+      "key": "translations.modals.clearingGameDirectory.waitToLaunchGame",
+      "zhLength": 70,
+      "enLength": 135,
+      "ratio": 0.5185185185185185
+    },
+    {
+      "key": "translations.pages.settings.entries.showDependencyStrings.description",
+      "zhLength": 87,
+      "enLength": 168,
+      "ratio": 0.5178571428571429
+    },
+    {
+      "key": "translations.modals.importProfile.states.importCode.tagStates.invalid",
+      "zhLength": 15,
+      "enLength": 29,
+      "ratio": 0.5172413793103449
+    },
+    {
+      "key": "translations.modals.importProfile.states.refresh.content.description",
+      "zhLength": 105,
+      "enLength": 203,
+      "ratio": 0.5172413793103449
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.redirectedToStorePage.title",
+      "zhLength": 17,
+      "enLength": 33,
+      "ratio": 0.5151515151515151
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.dialog.title",
+      "zhLength": 22,
+      "enLength": 43,
+      "ratio": 0.5116279069767442
+    },
+    {
+      "key": "translations.enums.sortNaming.CUSTOM",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.enums.sortNaming.MOD_NAME",
+      "zhLength": 4,
+      "enLength": 8,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.enums.sortLocalDisabledMods.CUSTOM",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.enums.sortLocalDisabledMods.LAST",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.enums.launchType.AUTO",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.enums.sortConfigFile.NAME",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.instructToSelect",
+      "zhLength": 21,
+      "enLength": 42,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.modName.label",
+      "zhLength": 4,
+      "enLength": 8,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.associatedMods.done",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.codeExport.done",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.tags.outdated",
+      "zhLength": 16,
+      "enLength": 32,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.renameProfile.actions.rename",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.importProfile.states.fromFile.title",
+      "zhLength": 6,
+      "enLength": 12,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.configEditor.actions.sort.label",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.actions.save",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.gameSelection.tabs.game",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.gameSelection.tabs.server",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.hiddenGames",
+      "zhLength": 6,
+      "enLength": 12,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.help.hero.title",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.help.modsNotShowing.potentialSolutions.goToWiki",
+      "zhLength": 7,
+      "enLength": 14,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.navigation.gameActions.startModded",
+      "zhLength": 6,
+      "enLength": 12,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.navigation.modsActions.label",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.navigation.otherActions.help",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.installed.searchAndSort.sort.label",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.unableToFetchReadme",
+      "zhLength": 11,
+      "enLength": 22,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.online.topbar.sort",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.pinned.short",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.rename",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.searchTerms[3]",
+      "zhLength": 3,
+      "enLength": 6,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.description",
+      "zhLength": 20,
+      "enLength": 40,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.searchTerms[4]",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.searchTerms[1]",
+      "zhLength": 11,
+      "enLength": 22,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.dark",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.pages.splash.menu.helpLabel",
+      "zhLength": 2,
+      "enLength": 4,
+      "ratio": 0.5
+    },
+    {
+      "key": "translations.modals.clearingGameDirectory.checkSteamForProgress",
+      "zhLength": 73,
+      "enLength": 147,
+      "ratio": 0.4965986394557823
+    },
+    {
+      "key": "translations.pages.help.general.slowGame.issuePersisting",
+      "zhLength": 68,
+      "enLength": 138,
+      "ratio": 0.4927536231884058
+    },
+    {
+      "key": "translations.pages.linuxSetup.flatpakWarning.notice",
+      "zhLength": 34,
+      "enLength": 69,
+      "ratio": 0.4927536231884058
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.warning",
+      "zhLength": 34,
+      "enLength": 69,
+      "ratio": 0.4927536231884058
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.dataEntryInfo",
+      "zhLength": 91,
+      "enLength": 186,
+      "ratio": 0.489247311827957
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.value",
+      "zhLength": 21,
+      "enLength": 43,
+      "ratio": 0.4883720930232558
+    },
+    {
+      "key": "translations.pages.help.general.slowGame.title",
+      "zhLength": 16,
+      "enLength": 33,
+      "ratio": 0.48484848484848486
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.tags.latest",
+      "zhLength": 15,
+      "enLength": 31,
+      "ratio": 0.4838709677419355
+    },
+    {
+      "key": "translations.banners.concerningPackage.text",
+      "zhLength": 28,
+      "enLength": 58,
+      "ratio": 0.4827586206896552
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.content.update.selectProfile",
+      "zhLength": 11,
+      "enLength": 23,
+      "ratio": 0.4782608695652174
+    },
+    {
+      "key": "translations.pages.splash.content.about.creator",
+      "zhLength": 10,
+      "enLength": 21,
+      "ratio": 0.47619047619047616
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.states.error",
+      "zhLength": 19,
+      "enLength": 40,
+      "ratio": 0.475
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.states.error",
+      "zhLength": 19,
+      "enLength": 40,
+      "ratio": 0.475
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.noModsToUpdate.title",
+      "zhLength": 8,
+      "enLength": 17,
+      "ratio": 0.47058823529411764
+    },
+    {
+      "key": "translations.modals.failedToSetSteamFolder.title",
+      "zhLength": 14,
+      "enLength": 30,
+      "ratio": 0.4666666666666667
+    },
+    {
+      "key": "translations.pages.manager.installed.expandableCard.tooltips.dragToReorder",
+      "zhLength": 7,
+      "enLength": 15,
+      "ratio": 0.4666666666666667
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.import",
+      "zhLength": 7,
+      "enLength": 15,
+      "ratio": 0.4666666666666667
+    },
+    {
+      "key": "translations.pages.settings.entries.updateAllMods.status",
+      "zhLength": 33,
+      "enLength": 71,
+      "ratio": 0.4647887323943662
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.title",
+      "zhLength": 19,
+      "enLength": 41,
+      "ratio": 0.4634146341463415
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.fetchingData",
+      "zhLength": 6,
+      "enLength": 13,
+      "ratio": 0.46153846153846156
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.states.refreshing",
+      "zhLength": 6,
+      "enLength": 13,
+      "ratio": 0.46153846153846156
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.states.refreshing",
+      "zhLength": 6,
+      "enLength": 13,
+      "ratio": 0.46153846153846156
+    },
+    {
+      "key": "translations.pages.help.general.slowGame.likelyCause",
+      "zhLength": 82,
+      "enLength": 178,
+      "ratio": 0.4606741573033708
+    },
+    {
+      "key": "translations.modals.uninstallMod.dependantsWarning",
+      "zhLength": 55,
+      "enLength": 120,
+      "ratio": 0.4583333333333333
+    },
+    {
+      "key": "translations.modals.disableMod.dependantsWarning",
+      "zhLength": 53,
+      "enLength": 116,
+      "ratio": 0.45689655172413796
+    },
+    {
+      "key": "translations.pages.linuxSetup.instructions.whyNeeded",
+      "zhLength": 37,
+      "enLength": 81,
+      "ratio": 0.4567901234567901
+    },
+    {
+      "key": "translations.modals.clearingGameDirectory.title",
+      "zhLength": 21,
+      "enLength": 46,
+      "ratio": 0.45652173913043476
+    },
+    {
+      "key": "translations.banners.updatableMods.updateAction",
+      "zhLength": 5,
+      "enLength": 11,
+      "ratio": 0.45454545454545453
+    },
+    {
+      "key": "translations.modals.importLocalMod.validationMessages.nonNumericVersion",
+      "zhLength": 20,
+      "enLength": 44,
+      "ratio": 0.45454545454545453
+    },
+    {
+      "key": "translations.pages.linuxSetup.instructions.intro",
+      "zhLength": 45,
+      "enLength": 99,
+      "ratio": 0.45454545454545453
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.dataFolder",
+      "zhLength": 5,
+      "enLength": 11,
+      "ratio": 0.45454545454545453
+    },
+    {
+      "key": "translations.modals.concerningPackage.actions.markSafe",
+      "zhLength": 9,
+      "enLength": 20,
+      "ratio": 0.45
+    },
+    {
+      "key": "translations.pages.configEditor.actions.openFile",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.actions.showMore",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.gameSelection.ecosystemUpdate.updating",
+      "zhLength": 8,
+      "enLength": 18,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.manager.installed.expandableCard.imageAltText",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.title",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[0]",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.pages.splash.states.preparing",
+      "zhLength": 4,
+      "enLength": 9,
+      "ratio": 0.4444444444444444
+    },
+    {
+      "key": "translations.modals.gameRunning.takingAWhile",
+      "zhLength": 27,
+      "enLength": 61,
+      "ratio": 0.4426229508196721
+    },
+    {
+      "key": "translations.banners.modListUpdate.retryPrompt",
+      "zhLength": 43,
+      "enLength": 98,
+      "ratio": 0.4387755102040816
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.description",
+      "zhLength": 7,
+      "enLength": 16,
+      "ratio": 0.4375
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.content.notFoundDisclaimer",
+      "zhLength": 38,
+      "enLength": 87,
+      "ratio": 0.4367816091954023
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.deprecated.long",
+      "zhLength": 13,
+      "enLength": 30,
+      "ratio": 0.43333333333333335
+    },
+    {
+      "key": "translations.modListStatus.pruneCache",
+      "zhLength": 16,
+      "enLength": 37,
+      "ratio": 0.43243243243243246
+    },
+    {
+      "key": "translations.pages.splash.states.pruningLocalCache",
+      "zhLength": 16,
+      "enLength": 37,
+      "ratio": 0.43243243243243246
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.applyChanges",
+      "zhLength": 15,
+      "enLength": 35,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.servers",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.linuxSetup.instructions.copyInstruction",
+      "zhLength": 30,
+      "enLength": 70,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.manager.navigation.profileSwitcher.label",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.profile",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.actions.notSet",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.profileFolder",
+      "zhLength": 6,
+      "enLength": 14,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.enabled",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.enabled",
+      "zhLength": 3,
+      "enLength": 7,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.states.noApiInfo",
+      "zhLength": 12,
+      "enLength": 28,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.states.noApiInfo",
+      "zhLength": 12,
+      "enLength": 28,
+      "ratio": 0.42857142857142855
+    },
+    {
+      "key": "translations.pages.help.general.gettingStarted.onceInstalled",
+      "zhLength": 41,
+      "enLength": 97,
+      "ratio": 0.422680412371134
+    },
+    {
+      "key": "translations.modals.failedToSetSteamFolder.steamExecutableNotSelected",
+      "zhLength": 16,
+      "enLength": 38,
+      "ratio": 0.42105263157894735
+    },
+    {
+      "key": "translations.modals.concerningPackage.notFound",
+      "zhLength": 39,
+      "enLength": 93,
+      "ratio": 0.41935483870967744
+    },
+    {
+      "key": "translations.pages.help.general.dedicatedServers.content",
+      "zhLength": 88,
+      "enLength": 210,
+      "ratio": 0.41904761904761906
+    },
+    {
+      "key": "translations.pages.splash.content.main.havingTrouble.body",
+      "zhLength": 36,
+      "enLength": 86,
+      "ratio": 0.4186046511627907
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.consoleCloses.tryRunning",
+      "zhLength": 28,
+      "enLength": 67,
+      "ratio": 0.417910447761194
+    },
+    {
+      "key": "translations.modals.failedToSetTheGameFolder.listedExecutableNames",
+      "zhLength": 25,
+      "enLength": 60,
+      "ratio": 0.4166666666666667
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.tags.recommended",
+      "zhLength": 15,
+      "enLength": 36,
+      "ratio": 0.4166666666666667
+    },
+    {
+      "key": "translations.modListStatus.resettingCache",
+      "zhLength": 10,
+      "enLength": 24,
+      "ratio": 0.4166666666666667
+    },
+    {
+      "key": "translations.pages.configEditor.loading",
+      "zhLength": 10,
+      "enLength": 24,
+      "ratio": 0.4166666666666667
+    },
+    {
+      "key": "translations.banners.modListUpdate.errorOccurred",
+      "zhLength": 27,
+      "enLength": 65,
+      "ratio": 0.4153846153846154
+    },
+    {
+      "key": "translations.pages.manager.online.pagination.noMods",
+      "zhLength": 7,
+      "enLength": 17,
+      "ratio": 0.4117647058823529
+    },
+    {
+      "key": "translations.pages.manager.actions.selectExecutable",
+      "zhLength": 7,
+      "enLength": 17,
+      "ratio": 0.4117647058823529
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.allEnabled",
+      "zhLength": 16,
+      "enLength": 39,
+      "ratio": 0.41025641025641024
+    },
+    {
+      "key": "translations.modals.importLocalMod.validationMessages.invalidVersion",
+      "zhLength": 25,
+      "enLength": 61,
+      "ratio": 0.4098360655737705
+    },
+    {
+      "key": "translations.modals.importProfile.states.fileCodeSelection.title",
+      "zhLength": 13,
+      "enLength": 32,
+      "ratio": 0.40625
+    },
+    {
+      "key": "translations.banners.concerningPackage.action",
+      "zhLength": 12,
+      "enLength": 30,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.enums.sortLocalDisabledMods.FIRST",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.dependencyStrings.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.concerningPackage.actions.remove",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.concerningPackage.actions.review",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.gameRunning.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.error.title",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.error.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.associatedMods.dependants",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.downloadProgress.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.noModsToUpdate.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.title",
+      "zhLength": 10,
+      "enLength": 25,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.updateAll",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.modFilter.showDeprecated",
+      "zhLength": 8,
+      "enLength": 20,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.sort.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.platform.header",
+      "zhLength": 12,
+      "enLength": 30,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.actions.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.platforms.OTHER",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.downloadMonitor.actions.retry",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.gameSelection.actions.request.server",
+      "zhLength": 8,
+      "enLength": 20,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.imageAltText",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.games",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.gameSelection.loading",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.manager.navigation.otherActions.label",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.manager.navigation.profileSwitcher.gameIconAltText",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.manager.navigation.profileSwitcher.close",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.associated",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.other",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.searchTerms[1]",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.cleanOnlineModListCache.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[4]",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[5]",
+      "zhLength": 4,
+      "enLength": 10,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[6]",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.enableAll",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.allDisabled",
+      "zhLength": 16,
+      "enLength": 40,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.searchTerms[2]",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.title",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.searchTerms[3]",
+      "zhLength": 8,
+      "enLength": 20,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.title",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.light",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.searchTerms[0]",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.action",
+      "zhLength": 8,
+      "enLength": 20,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.updateAllMods.title",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.settings.entries.updateAllMods.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 15,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.pages.splash.menu.helpItems.about",
+      "zhLength": 2,
+      "enLength": 5,
+      "ratio": 0.4
+    },
+    {
+      "key": "translations.modals.associatedMods.none",
+      "zhLength": 17,
+      "enLength": 43,
+      "ratio": 0.3953488372093023
+    },
+    {
+      "key": "translations.modals.createProfile.tagStates.error",
+      "zhLength": 28,
+      "enLength": 71,
+      "ratio": 0.39436619718309857
+    },
+    {
+      "key": "translations.modals.renameProfile.tagStates.error",
+      "zhLength": 28,
+      "enLength": 71,
+      "ratio": 0.39436619718309857
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.tagStates.error",
+      "zhLength": 28,
+      "enLength": 71,
+      "ratio": 0.39436619718309857
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.description",
+      "zhLength": 46,
+      "enLength": 117,
+      "ratio": 0.39316239316239315
+    },
+    {
+      "key": "translations.pages.settings.entries.updateAllMods.description",
+      "zhLength": 27,
+      "enLength": 69,
+      "ratio": 0.391304347826087
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.waitingForSelection",
+      "zhLength": 16,
+      "enLength": 41,
+      "ratio": 0.3902439024390244
+    },
+    {
+      "key": "translations.modals.importProfile.states.willImportOrUpdate.actions.newProfile",
+      "zhLength": 7,
+      "enLength": 18,
+      "ratio": 0.3888888888888889
+    },
+    {
+      "key": "translations.pages.gameSelection.actions.request.game",
+      "zhLength": 7,
+      "enLength": 18,
+      "ratio": 0.3888888888888889
+    },
+    {
+      "key": "translations.pages.manager.installed.expandableCard.funkyModeAltText",
+      "zhLength": 7,
+      "enLength": 18,
+      "ratio": 0.3888888888888889
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.dialog.button",
+      "zhLength": 7,
+      "enLength": 18,
+      "ratio": 0.3888888888888889
+    },
+    {
+      "key": "translations.pages.splash.states.checkingForLocalCache",
+      "zhLength": 14,
+      "enLength": 36,
+      "ratio": 0.3888888888888889
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.description",
+      "zhLength": 19,
+      "enLength": 49,
+      "ratio": 0.3877551020408163
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.description",
+      "zhLength": 29,
+      "enLength": 75,
+      "ratio": 0.38666666666666666
+    },
+    {
+      "key": "translations.modals.importProfile.states.refresh.title",
+      "zhLength": 10,
+      "enLength": 26,
+      "ratio": 0.38461538461538464
+    },
+    {
+      "key": "translations.pages.gameSelection.actions.select.server",
+      "zhLength": 5,
+      "enLength": 13,
+      "ratio": 0.38461538461538464
+    },
+    {
+      "key": "translations.pages.splash.content.main.didYouKnow",
+      "zhLength": 5,
+      "enLength": 13,
+      "ratio": 0.38461538461538464
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.howTo",
+      "zhLength": 34,
+      "enLength": 89,
+      "ratio": 0.38202247191011235
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.description",
+      "zhLength": 69,
+      "enLength": 181,
+      "ratio": 0.3812154696132597
+    },
+    {
+      "key": "translations.pages.settings.entries.cleanOnlineModListCache.action",
+      "zhLength": 8,
+      "enLength": 21,
+      "ratio": 0.38095238095238093
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.title",
+      "zhLength": 8,
+      "enLength": 21,
+      "ratio": 0.38095238095238093
+    },
+    {
+      "key": "translations.pages.profileSelection.pageTitle.subtitle",
+      "zhLength": 14,
+      "enLength": 37,
+      "ratio": 0.3783783783783784
+    },
+    {
+      "key": "translations.pages.settings.entries.importLocalMod.description",
+      "zhLength": 29,
+      "enLength": 77,
+      "ratio": 0.37662337662337664
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.redirectedToStorePage.solution",
+      "zhLength": 38,
+      "enLength": 101,
+      "ratio": 0.37623762376237624
+    },
+    {
+      "key": "translations.modals.launchArguments.vanillaLabel",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.modals.importLocalMod.actions.importLocalMod",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.modals.codeExport.title",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.modals.renameProfile.title",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.selectOption",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.gameSelection.noResults.suggestion",
+      "zhLength": 27,
+      "enLength": 72,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.manager.installed.searchAndSort.sort.disabledPositions.label",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.labels.disabled",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.modpacks",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.title",
+      "zhLength": 9,
+      "enLength": 24,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.disabled",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.expanded",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.searchTerms[3]",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.disabled",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.importLocalMod.title",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.importLocalMod.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.disabled",
+      "zhLength": 3,
+      "enLength": 8,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.title",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.disableAll",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.searchTerms[3]",
+      "zhLength": 6,
+      "enLength": 16,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.pages.splash.content.faq.howToGetStarted.body",
+      "zhLength": 36,
+      "enLength": 96,
+      "ratio": 0.375
+    },
+    {
+      "key": "translations.modals.launchType.auto.PROTON",
+      "zhLength": 19,
+      "enLength": 51,
+      "ratio": 0.37254901960784315
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.description",
+      "zhLength": 42,
+      "enLength": 113,
+      "ratio": 0.37168141592920356
+    },
+    {
+      "key": "translations.pages.manager.installed.noModsInstalled.content",
+      "zhLength": 26,
+      "enLength": 70,
+      "ratio": 0.37142857142857144
+    },
+    {
+      "key": "translations.pages.settings.entries.cleanOnlineModListCache.title",
+      "zhLength": 10,
+      "enLength": 27,
+      "ratio": 0.37037037037037035
+    },
+    {
+      "key": "translations.pages.settings.entries.cleanOnlineModListCache.searchTerms[0]",
+      "zhLength": 10,
+      "enLength": 27,
+      "ratio": 0.37037037037037035
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.searchTerms[2]",
+      "zhLength": 10,
+      "enLength": 27,
+      "ratio": 0.37037037037037035
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.noModsToUpdate.content",
+      "zhLength": 27,
+      "enLength": 73,
+      "ratio": 0.3698630136986301
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.description",
+      "zhLength": 38,
+      "enLength": 103,
+      "ratio": 0.36893203883495146
+    },
+    {
+      "key": "translations.modals.disableMod.modsToBeDisabled",
+      "zhLength": 7,
+      "enLength": 19,
+      "ratio": 0.3684210526315789
+    },
+    {
+      "key": "translations.modals.codeExport.copied",
+      "zhLength": 7,
+      "enLength": 19,
+      "ratio": 0.3684210526315789
+    },
+    {
+      "key": "translations.pages.help.modsNotShowing.potentialSolutions.title",
+      "zhLength": 7,
+      "enLength": 19,
+      "ratio": 0.3684210526315789
+    },
+    {
+      "key": "translations.modals.createProfile.description",
+      "zhLength": 26,
+      "enLength": 71,
+      "ratio": 0.36619718309859156
+    },
+    {
+      "key": "translations.modals.renameProfile.content",
+      "zhLength": 26,
+      "enLength": 71,
+      "ratio": 0.36619718309859156
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.content.create.description",
+      "zhLength": 26,
+      "enLength": 71,
+      "ratio": 0.36619718309859156
+    },
+    {
+      "key": "translations.enums.sortNaming.AUTHOR",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.modals.importLocalMod.actions.selectFile",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.modals.disableMod.actions.disableAll",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.title.cleaningUp",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.modListStatus.almostDone",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.configEditor.actions.editConfig",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.gameSelection.actions.select.game",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.gameSelection.ecosystemUpdate.retry",
+      "zhLength": 8,
+      "enLength": 22,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.actions.viewOnline",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.action",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[2]",
+      "zhLength": 8,
+      "enLength": 22,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.deleteCopy",
+      "zhLength": 4,
+      "enLength": 11,
+      "ratio": 0.36363636363636365
+    },
+    {
+      "key": "translations.modals.modFilter.languageDisclaimer",
+      "zhLength": 25,
+      "enLength": 69,
+      "ratio": 0.36231884057971014
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.tags.select",
+      "zhLength": 9,
+      "enLength": 25,
+      "ratio": 0.36
+    },
+    {
+      "key": "translations.modals.gameRunning.closeToContinue",
+      "zhLength": 14,
+      "enLength": 39,
+      "ratio": 0.358974358974359
+    },
+    {
+      "key": "translations.modals.concerningPackage.recommendation",
+      "zhLength": 30,
+      "enLength": 84,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.modals.deleteProfile.title",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.modals.deleteProfile.actions.delete",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.modals.importProfile.dialogTitle",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.hasContent.action",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.manager.navigation.activityBar.exportProfile",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.manager.navigation.activityBar.exportToCode",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.manager.navigation.activityBar.exportToFile",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.title",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.searchTerms[0]",
+      "zhLength": 5,
+      "enLength": 14,
+      "ratio": 0.35714285714285715
+    },
+    {
+      "key": "translations.pages.splash.gameUpdatesWarning",
+      "zhLength": 29,
+      "enLength": 82,
+      "ratio": 0.35365853658536583
+    },
+    {
+      "key": "translations.modals.launchType.native.addArgumentsInfo",
+      "zhLength": 41,
+      "enLength": 116,
+      "ratio": 0.35344827586206895
+    },
+    {
+      "key": "translations.modals.categorySelector.selectCategory",
+      "zhLength": 6,
+      "enLength": 17,
+      "ratio": 0.35294117647058826
+    },
+    {
+      "key": "translations.pages.help.tabs.gameWontStart",
+      "zhLength": 6,
+      "enLength": 17,
+      "ratio": 0.35294117647058826
+    },
+    {
+      "key": "translations.pages.linuxSetup.actions.copy",
+      "zhLength": 6,
+      "enLength": 17,
+      "ratio": 0.35294117647058826
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.title",
+      "zhLength": 6,
+      "enLength": 17,
+      "ratio": 0.35294117647058826
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 17,
+      "ratio": 0.35294117647058826
+    },
+    {
+      "key": "translations.pages.help.updating.autoUpdates.ifProblemOccurs",
+      "zhLength": 26,
+      "enLength": 74,
+      "ratio": 0.35135135135135137
+    },
+    {
+      "key": "translations.modals.importLocalMod.title",
+      "zhLength": 7,
+      "enLength": 20,
+      "ratio": 0.35
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.dialog.button",
+      "zhLength": 7,
+      "enLength": 20,
+      "ratio": 0.35
+    },
+    {
+      "key": "translations.modals.failedToSetSteamFolder.solution",
+      "zhLength": 30,
+      "enLength": 86,
+      "ratio": 0.3488372093023256
+    },
+    {
+      "key": "translations.modals.failedToSetTheGameFolder.solution",
+      "zhLength": 30,
+      "enLength": 86,
+      "ratio": 0.3488372093023256
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.content.outdatedModsAdvice",
+      "zhLength": 15,
+      "enLength": 43,
+      "ratio": 0.3488372093023256
+    },
+    {
+      "key": "translations.modListStatus.processingModList",
+      "zhLength": 8,
+      "enLength": 23,
+      "ratio": 0.34782608695652173
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.searchTerms[0]",
+      "zhLength": 8,
+      "enLength": 23,
+      "ratio": 0.34782608695652173
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.title",
+      "zhLength": 8,
+      "enLength": 23,
+      "ratio": 0.34782608695652173
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.searchTerms[0]",
+      "zhLength": 8,
+      "enLength": 23,
+      "ratio": 0.34782608695652173
+    },
+    {
+      "key": "translations.pages.splash.states.processingModList",
+      "zhLength": 8,
+      "enLength": 23,
+      "ratio": 0.34782608695652173
+    },
+    {
+      "key": "translations.modals.importLocalMod.dialogTitle",
+      "zhLength": 9,
+      "enLength": 26,
+      "ratio": 0.34615384615384615
+    },
+    {
+      "key": "translations.modals.createProfile.tagStates.required",
+      "zhLength": 10,
+      "enLength": 29,
+      "ratio": 0.3448275862068966
+    },
+    {
+      "key": "translations.modals.renameProfile.tagStates.required",
+      "zhLength": 10,
+      "enLength": 29,
+      "ratio": 0.3448275862068966
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.tagStates.required",
+      "zhLength": 10,
+      "enLength": 29,
+      "ratio": 0.3448275862068966
+    },
+    {
+      "key": "translations.pages.gameSelection.ecosystemUpdate.upToDate",
+      "zhLength": 10,
+      "enLength": 29,
+      "ratio": 0.3448275862068966
+    },
+    {
+      "key": "translations.modals.gameRunning.bePatient",
+      "zhLength": 11,
+      "enLength": 32,
+      "ratio": 0.34375
+    },
+    {
+      "key": "translations.pages.configEditor.hero.subtitle",
+      "zhLength": 12,
+      "enLength": 35,
+      "ratio": 0.34285714285714286
+    },
+    {
+      "key": "translations.pages.settings.entries.copyLogToClipboard.searchTerms[0]",
+      "zhLength": 12,
+      "enLength": 35,
+      "ratio": 0.34285714285714286
+    },
+    {
+      "key": "translations.modals.settingsLoader.resetFailed",
+      "zhLength": 41,
+      "enLength": 121,
+      "ratio": 0.33884297520661155
+    },
+    {
+      "key": "translations.banners.modListUpdate.error",
+      "zhLength": 10,
+      "enLength": 30,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.banners.modListUpdate.viewDetails",
+      "zhLength": 6,
+      "enLength": 18,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortNaming.INSTALL_DATE",
+      "zhLength": 4,
+      "enLength": 12,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortingStyle.RELEVANCE",
+      "zhLength": 3,
+      "enLength": 9,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortingStyle.LAST_UPDATED",
+      "zhLength": 4,
+      "enLength": 12,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortingStyle.ALPHABETICAL",
+      "zhLength": 4,
+      "enLength": 12,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortingStyle.RATING",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.launchType.NATIVE",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.enums.sortConfigFile.LAST_UPDATED",
+      "zhLength": 4,
+      "enLength": 12,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.clearingGameDirectory.confirmation",
+      "zhLength": 4,
+      "enLength": 12,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.launchArguments.title",
+      "zhLength": 9,
+      "enLength": 27,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.modAuthor.label",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.launchType.actions.update",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.sort.title",
+      "zhLength": 9,
+      "enLength": 27,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.createProfile.actions.create",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.dialogButton",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.title",
+      "zhLength": 8,
+      "enLength": 24,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.content.packagesWillBeInstalled",
+      "zhLength": 11,
+      "enLength": 33,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.actions.proceed",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.actions.create",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.configEditor.actions.delete",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.configEditor.actions.search.label",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.configEditor.actions.search.placeholder",
+      "zhLength": 8,
+      "enLength": 24,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.actions.cancel",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.downloadMonitor.actions.remove",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.linuxSetup.hero.subtitle",
+      "zhLength": 11,
+      "enLength": 33,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.linuxSetup.flatpakWarning.mustUpdate",
+      "zhLength": 18,
+      "enLength": 54,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.navigation.modsActions.installed",
+      "zhLength": 3,
+      "enLength": 9,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.navigation.modsActions.online",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.searchAndSort.search.label",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.enable",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.willNotBeUsed",
+      "zhLength": 11,
+      "enLength": 33,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.enable",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.update",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.donate",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.installed.expandableCard.tooltips.expand",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.actions.donate",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.online.topbar.search.label",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.online.topbar.filter",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.manager.online.pagination.changePageInfo",
+      "zhLength": 12,
+      "enLength": 36,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.select",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.delete",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.search.label",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.actions.change",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.actions.browse",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.enabled",
+      "zhLength": 7,
+      "enLength": 21,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.collapsed",
+      "zhLength": 3,
+      "enLength": 9,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.searchTerms[2]",
+      "zhLength": 3,
+      "enLength": 9,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.importLocalMod.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.launchArguments.searchTerms[0]",
+      "zhLength": 9,
+      "enLength": 27,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.actionDescription",
+      "zhLength": 24,
+      "enLength": 72,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.modState.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 6,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.splash.content.main.havingTrouble.title",
+      "zhLength": 5,
+      "enLength": 15,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.splash.content.faq.howToGetStarted.title",
+      "zhLength": 7,
+      "enLength": 21,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.pages.splash.content.faq.startingWithMods.title",
+      "zhLength": 9,
+      "enLength": 27,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "key": "translations.modals.importProfile.states.importInProgress.content.waitMessage",
+      "zhLength": 25,
+      "enLength": 76,
+      "ratio": 0.32894736842105265
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.forSteam",
+      "zhLength": 19,
+      "enLength": 58,
+      "ratio": 0.3275862068965517
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.description",
+      "zhLength": 17,
+      "enLength": 52,
+      "ratio": 0.3269230769230769
+    },
+    {
+      "key": "translations.modals.disableMod.actions.disableAllRecommended",
+      "zhLength": 8,
+      "enLength": 25,
+      "ratio": 0.32
+    },
+    {
+      "key": "translations.pages.help.modsNotShowing.potentialSolutions.instructToWiki",
+      "zhLength": 30,
+      "enLength": 94,
+      "ratio": 0.3191489361702128
+    },
+    {
+      "key": "translations.modals.dependencyStrings.title",
+      "zhLength": 7,
+      "enLength": 22,
+      "ratio": 0.3181818181818182
+    },
+    {
+      "key": "translations.modals.categorySelector.noCategoriesSelected",
+      "zhLength": 7,
+      "enLength": 22,
+      "ratio": 0.3181818181818182
+    },
+    {
+      "key": "translations.modals.uninstallMod.modsToBeUninstalled",
+      "zhLength": 7,
+      "enLength": 22,
+      "ratio": 0.3181818181818182
+    },
+    {
+      "key": "translations.modals.importProfile.states.importCode.title",
+      "zhLength": 7,
+      "enLength": 22,
+      "ratio": 0.3181818181818182
+    },
+    {
+      "key": "translations.modals.importProfile.states.importCode.enterCodePlaceholder",
+      "zhLength": 7,
+      "enLength": 22,
+      "ratio": 0.3181818181818182
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.content.ensureCorrectProfile",
+      "zhLength": 20,
+      "enLength": 63,
+      "ratio": 0.31746031746031744
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.content.willBeUpdated",
+      "zhLength": 19,
+      "enLength": 60,
+      "ratio": 0.31666666666666665
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.title",
+      "zhLength": 12,
+      "enLength": 38,
+      "ratio": 0.3157894736842105
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.description",
+      "zhLength": 24,
+      "enLength": 76,
+      "ratio": 0.3157894736842105
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.enabledHint",
+      "zhLength": 12,
+      "enLength": 38,
+      "ratio": 0.3157894736842105
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.warning",
+      "zhLength": 35,
+      "enLength": 111,
+      "ratio": 0.3153153153153153
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.hasNothing.inform",
+      "zhLength": 11,
+      "enLength": 35,
+      "ratio": 0.3142857142857143
+    },
+    {
+      "key": "translations.modals.createProfile.title",
+      "zhLength": 5,
+      "enLength": 16,
+      "ratio": 0.3125
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.title",
+      "zhLength": 5,
+      "enLength": 16,
+      "ratio": 0.3125
+    },
+    {
+      "key": "translations.pages.gameSelection.pageTitle.title.server",
+      "zhLength": 5,
+      "enLength": 16,
+      "ratio": 0.3125
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.unsure",
+      "zhLength": 10,
+      "enLength": 32,
+      "ratio": 0.3125
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.searchTerms[2]",
+      "zhLength": 5,
+      "enLength": 16,
+      "ratio": 0.3125
+    },
+    {
+      "key": "translations.pages.settings.entries.toggleCdn.description",
+      "zhLength": 28,
+      "enLength": 90,
+      "ratio": 0.3111111111111111
+    },
+    {
+      "key": "translations.pages.manager.online.pagination.noFoundMods",
+      "zhLength": 9,
+      "enLength": 29,
+      "ratio": 0.3103448275862069
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.description",
+      "zhLength": 18,
+      "enLength": 58,
+      "ratio": 0.3103448275862069
+    },
+    {
+      "key": "translations.pages.gameSelection.migrationNotice.actionsDisabled",
+      "zhLength": 22,
+      "enLength": 71,
+      "ratio": 0.30985915492957744
+    },
+    {
+      "key": "translations.modals.deleteProfile.content.resultingAction",
+      "zhLength": 25,
+      "enLength": 81,
+      "ratio": 0.30864197530864196
+    },
+    {
+      "key": "translations.banners.modListUpdate.retryAction",
+      "zhLength": 4,
+      "enLength": 13,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.modals.uninstallMod.actions.uninstallAll",
+      "zhLength": 4,
+      "enLength": 13,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.download",
+      "zhLength": 8,
+      "enLength": 26,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.modals.modFilter.apply",
+      "zhLength": 4,
+      "enLength": 13,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.gameSelection.ecosystemUpdate.failed",
+      "zhLength": 8,
+      "enLength": 26,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.help.updating.ignoreUpdates.content",
+      "zhLength": 36,
+      "enLength": 117,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.manager.navigation.gameActions.startVanilla",
+      "zhLength": 4,
+      "enLength": 13,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.searchTerms[1]",
+      "zhLength": 8,
+      "enLength": 26,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.searchTerms[1]",
+      "zhLength": 8,
+      "enLength": 26,
+      "ratio": 0.3076923076923077
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.hiddenGamesNotice",
+      "zhLength": 11,
+      "enLength": 36,
+      "ratio": 0.3055555555555556
+    },
+    {
+      "key": "translations.modals.importProfile.states.willImportOrUpdate.actions.existingProfile",
+      "zhLength": 7,
+      "enLength": 23,
+      "ratio": 0.30434782608695654
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.errorModal.title",
+      "zhLength": 14,
+      "enLength": 46,
+      "ratio": 0.30434782608695654
+    },
+    {
+      "key": "translations.pages.settings.entries.showDependencyStrings.title",
+      "zhLength": 7,
+      "enLength": 23,
+      "ratio": 0.30434782608695654
+    },
+    {
+      "key": "translations.pages.settings.entries.showDependencyStrings.searchTerms[0]",
+      "zhLength": 7,
+      "enLength": 23,
+      "ratio": 0.30434782608695654
+    },
+    {
+      "key": "translations.pages.settings.entries.exportProfile.dialog.title",
+      "zhLength": 13,
+      "enLength": 43,
+      "ratio": 0.3023255813953488
+    },
+    {
+      "key": "translations.modals.failedToSetTheGameFolder.executableMustBeOneOf",
+      "zhLength": 16,
+      "enLength": 53,
+      "ratio": 0.3018867924528302
+    },
+    {
+      "key": "translations.pages.settings.entries.cleanOnlineModListCache.description",
+      "zhLength": 19,
+      "enLength": 63,
+      "ratio": 0.30158730158730157
+    },
+    {
+      "key": "translations.modals.importProfile.states.refresh.content.waitingForModDownloads",
+      "zhLength": 22,
+      "enLength": 73,
+      "ratio": 0.3013698630136986
+    },
+    {
+      "key": "translations.modals.launchType.title",
+      "zhLength": 6,
+      "enLength": 20,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.modals.settingsLoader.loadFailed",
+      "zhLength": 51,
+      "enLength": 170,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.labels.deprecated",
+      "zhLength": 3,
+      "enLength": 10,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.deprecated.short",
+      "zhLength": 3,
+      "enLength": 10,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.pages.settings.entries.launchArguments.action",
+      "zhLength": 6,
+      "enLength": 20,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.pages.splash.states.checkingForUpdates",
+      "zhLength": 6,
+      "enLength": 20,
+      "ratio": 0.3
+    },
+    {
+      "key": "translations.banners.managerUpdate.linkText",
+      "zhLength": 11,
+      "enLength": 37,
+      "ratio": 0.2972972972972973
+    },
+    {
+      "key": "translations.modals.uninstallMod.actions.uninstallAllRecommended",
+      "zhLength": 8,
+      "enLength": 27,
+      "ratio": 0.2962962962962963
+    },
+    {
+      "key": "translations.pages.manager.installed.searchAndSort.search.placeholder",
+      "zhLength": 8,
+      "enLength": 27,
+      "ratio": 0.2962962962962963
+    },
+    {
+      "key": "translations.pages.manager.installed.noModsInstalled.title",
+      "zhLength": 13,
+      "enLength": 44,
+      "ratio": 0.29545454545454547
+    },
+    {
+      "key": "translations.modals.launchType.auto.NATIVE",
+      "zhLength": 15,
+      "enLength": 51,
+      "ratio": 0.29411764705882354
+    },
+    {
+      "key": "translations.pages.help.general.dedicatedServers.title",
+      "zhLength": 5,
+      "enLength": 17,
+      "ratio": 0.29411764705882354
+    },
+    {
+      "key": "translations.pages.profileSelection.pageTitle.title",
+      "zhLength": 5,
+      "enLength": 17,
+      "ratio": 0.29411764705882354
+    },
+    {
+      "key": "translations.pages.profileSelection.error.updateProfileList",
+      "zhLength": 10,
+      "enLength": 34,
+      "ratio": 0.29411764705882354
+    },
+    {
+      "key": "translations.modals.modFilter.selectors.allCategories",
+      "zhLength": 12,
+      "enLength": 41,
+      "ratio": 0.2926829268292683
+    },
+    {
+      "key": "translations.modals.importLocalMod.validationMessages.noProfileSelected",
+      "zhLength": 7,
+      "enLength": 24,
+      "ratio": 0.2916666666666667
+    },
+    {
+      "key": "translations.modals.importProfile.states.fromFile.content",
+      "zhLength": 28,
+      "enLength": 96,
+      "ratio": 0.2916666666666667
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.description",
+      "zhLength": 21,
+      "enLength": 72,
+      "ratio": 0.2916666666666667
+    },
+    {
+      "key": "translations.modals.importLocalMod.validationMessages.modNameEmpty",
+      "zhLength": 9,
+      "enLength": 31,
+      "ratio": 0.2903225806451613
+    },
+    {
+      "key": "translations.modals.importProfile.states.addProfile.content.update.contentsWillBeOverwritten",
+      "zhLength": 24,
+      "enLength": 83,
+      "ratio": 0.2891566265060241
+    },
+    {
+      "key": "translations.pages.help.hero.subtitle",
+      "zhLength": 13,
+      "enLength": 45,
+      "ratio": 0.28888888888888886
+    },
+    {
+      "key": "translations.enums.sortDirection.REVERSE",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.modAuthor.placeholder",
+      "zhLength": 6,
+      "enLength": 21,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.version.label",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.concerningPackage.exportWarning",
+      "zhLength": 20,
+      "enLength": 70,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.launchType.actions.copyLaunchArgs",
+      "zhLength": 6,
+      "enLength": 21,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.modFilter.title",
+      "zhLength": 6,
+      "enLength": 21,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.sort.sortBehaviour",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.sort.sortDirection",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.modals.settingsLoader.resetAction",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.error404.actions.goBack",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.gameSelection.pageTitle.title.game",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.gameSelection.pageTitle.subtitle.game",
+      "zhLength": 12,
+      "enLength": 42,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.gameSelection.noResults.title",
+      "zhLength": 10,
+      "enLength": 35,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.gameSelection.actions.setAsDefault",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.searchResults",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.help.tabs.general",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.copyArguments",
+      "zhLength": 6,
+      "enLength": 21,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.disable",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.disable",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.openWebsite",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.manager.online.modList.actions.website",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.searchTerms[0]",
+      "zhLength": 8,
+      "enLength": 28,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.title",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 21,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.searchTerms[1]",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.funkyMode.searchTerms[2]",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[7]",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.refresh",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.action",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.searchTerms[1]",
+      "zhLength": 4,
+      "enLength": 14,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.splash.actions.goBack",
+      "zhLength": 2,
+      "enLength": 7,
+      "ratio": 0.2857142857142857
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.description",
+      "zhLength": 17,
+      "enLength": 60,
+      "ratio": 0.2833333333333333
+    },
+    {
+      "key": "translations.modals.launchArguments.someProvidedByDefault",
+      "zhLength": 11,
+      "enLength": 39,
+      "ratio": 0.28205128205128205
+    },
+    {
+      "key": "translations.pages.settings.entries.downloadCache.description",
+      "zhLength": 22,
+      "enLength": 78,
+      "ratio": 0.28205128205128205
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.hasNothing.action",
+      "zhLength": 9,
+      "enLength": 32,
+      "ratio": 0.28125
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.disabledHint",
+      "zhLength": 18,
+      "enLength": 64,
+      "ratio": 0.28125
+    },
+    {
+      "key": "translations.modals.codeExport.description",
+      "zhLength": 23,
+      "enLength": 82,
+      "ratio": 0.2804878048780488
+    },
+    {
+      "key": "translations.modals.modFilter.selectors.atLeastOneCategory",
+      "zhLength": 14,
+      "enLength": 50,
+      "ratio": 0.28
+    },
+    {
+      "key": "translations.pages.help.updating.autoUpdates.whenDoesItUpdate",
+      "zhLength": 21,
+      "enLength": 75,
+      "ratio": 0.28
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.content.missingDependenciesInstalled",
+      "zhLength": 12,
+      "enLength": 43,
+      "ratio": 0.27906976744186046
+    },
+    {
+      "key": "translations.modals.modFilter.selectors.noneCategories",
+      "zhLength": 12,
+      "enLength": 43,
+      "ratio": 0.27906976744186046
+    },
+    {
+      "key": "translations.pages.settings.entries.language.description",
+      "zhLength": 24,
+      "enLength": 86,
+      "ratio": 0.27906976744186046
+    },
+    {
+      "key": "translations.pages.gameSelection.pageTitle.subtitle.server",
+      "zhLength": 15,
+      "enLength": 54,
+      "ratio": 0.2777777777777778
+    },
+    {
+      "key": "translations.pages.help.tabs.modsNotShowing",
+      "zhLength": 5,
+      "enLength": 18,
+      "ratio": 0.2777777777777778
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.description",
+      "zhLength": 23,
+      "enLength": 83,
+      "ratio": 0.27710843373493976
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.description.label",
+      "zhLength": 6,
+      "enLength": 22,
+      "ratio": 0.2727272727272727
+    },
+    {
+      "key": "translations.modals.importLocalMod.validationMessages.authorNameEmpty",
+      "zhLength": 9,
+      "enLength": 33,
+      "ratio": 0.2727272727272727
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.consoleCloses.title",
+      "zhLength": 12,
+      "enLength": 44,
+      "ratio": 0.2727272727272727
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.backToGameSelection",
+      "zhLength": 6,
+      "enLength": 22,
+      "ratio": 0.2727272727272727
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[5]",
+      "zhLength": 3,
+      "enLength": 11,
+      "ratio": 0.2727272727272727
+    },
+    {
+      "key": "translations.pages.help.general.slowGame.ifStutters",
+      "zhLength": 22,
+      "enLength": 81,
+      "ratio": 0.2716049382716049
+    },
+    {
+      "key": "translations.pages.gameSelection.migrationNotice.requiresUpdate",
+      "zhLength": 19,
+      "enLength": 70,
+      "ratio": 0.2714285714285714
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.whereToPlace",
+      "zhLength": 27,
+      "enLength": 100,
+      "ratio": 0.27
+    },
+    {
+      "key": "translations.pages.settings.entries.launchArguments.description",
+      "zhLength": 17,
+      "enLength": 63,
+      "ratio": 0.2698412698412698
+    },
+    {
+      "key": "translations.modals.importProfile.states.willImportOrUpdate.title",
+      "zhLength": 19,
+      "enLength": 71,
+      "ratio": 0.2676056338028169
+    },
+    {
+      "key": "translations.modals.launchArguments.placeholder",
+      "zhLength": 4,
+      "enLength": 15,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.modals.platform.selectAction",
+      "zhLength": 4,
+      "enLength": 15,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.hasContent.downloadFailed",
+      "zhLength": 4,
+      "enLength": 15,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.modProgress.waiting",
+      "zhLength": 8,
+      "enLength": 30,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.pages.profileSelection.error.selectProfile",
+      "zhLength": 8,
+      "enLength": 30,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.pages.settings.entries.copyTroubleshooting.searchTerms[0]",
+      "zhLength": 12,
+      "enLength": 45,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.pages.settings.entries.importLocalMod.searchTerms[1]",
+      "zhLength": 4,
+      "enLength": 15,
+      "ratio": 0.26666666666666666
+    },
+    {
+      "key": "translations.modals.launchArguments.availableAfterInstallingLoader",
+      "zhLength": 17,
+      "enLength": 64,
+      "ratio": 0.265625
+    },
+    {
+      "key": "translations.pages.configEditor.warning.content",
+      "zhLength": 26,
+      "enLength": 98,
+      "ratio": 0.2653061224489796
+    },
+    {
+      "key": "translations.modals.settingsLoader.resetDidNotHelp",
+      "zhLength": 44,
+      "enLength": 166,
+      "ratio": 0.26506024096385544
+    },
+    {
+      "key": "translations.modals.deleteProfile.content.preventAction",
+      "zhLength": 27,
+      "enLength": 102,
+      "ratio": 0.2647058823529412
+    },
+    {
+      "key": "translations.pages.linuxSetup.flatpakWarning.existingArguments",
+      "zhLength": 14,
+      "enLength": 53,
+      "ratio": 0.2641509433962264
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.loaderNotInstalled",
+      "zhLength": 19,
+      "enLength": 72,
+      "ratio": 0.2638888888888889
+    },
+    {
+      "key": "translations.modals.launchType.native.unsureWrapperArgsPresent",
+      "zhLength": 20,
+      "enLength": 76,
+      "ratio": 0.2631578947368421
+    },
+    {
+      "key": "translations.pages.gameSelection.filter.placeholder.server",
+      "zhLength": 5,
+      "enLength": 19,
+      "ratio": 0.2631578947368421
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.packageInformation",
+      "zhLength": 5,
+      "enLength": 19,
+      "ratio": 0.2631578947368421
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.stillWritten",
+      "zhLength": 20,
+      "enLength": 76,
+      "ratio": 0.2631578947368421
+    },
+    {
+      "key": "translations.modals.settingsLoader.managerProblem",
+      "zhLength": 31,
+      "enLength": 118,
+      "ratio": 0.2627118644067797
+    },
+    {
+      "key": "translations.modals.downloadProgress.waitingForDownload",
+      "zhLength": 11,
+      "enLength": 42,
+      "ratio": 0.2619047619047619
+    },
+    {
+      "key": "translations.modals.launchArguments.updateArguments",
+      "zhLength": 6,
+      "enLength": 23,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.title",
+      "zhLength": 6,
+      "enLength": 23,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 23,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.title",
+      "zhLength": 6,
+      "enLength": 23,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.expandCards.searchTerms[0]",
+      "zhLength": 6,
+      "enLength": 23,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.onlineModList.states.disabledWhileDownloading",
+      "zhLength": 18,
+      "enLength": 69,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.settings.entries.refreshOnlineModList.states.disabledWhileDownloading",
+      "zhLength": 18,
+      "enLength": 69,
+      "ratio": 0.2608695652173913
+    },
+    {
+      "key": "translations.pages.help.gameWontStart.errorModal.solution",
+      "zhLength": 22,
+      "enLength": 85,
+      "ratio": 0.25882352941176473
+    },
+    {
+      "key": "translations.pages.splash.content.about.techStack.builtUsing",
+      "zhLength": 22,
+      "enLength": 85,
+      "ratio": 0.25882352941176473
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.yourCurrentArgument",
+      "zhLength": 8,
+      "enLength": 31,
+      "ratio": 0.25806451612903225
+    },
+    {
+      "key": "translations.modals.concerningPackage.whyRemoved",
+      "zhLength": 29,
+      "enLength": 113,
+      "ratio": 0.25663716814159293
+    },
+    {
+      "key": "translations.pages.help.general.launchingExternally.title",
+      "zhLength": 12,
+      "enLength": 47,
+      "ratio": 0.2553191489361702
+    },
+    {
+      "key": "translations.banners.modListUpdate.willKeepTrying",
+      "zhLength": 18,
+      "enLength": 71,
+      "ratio": 0.2535211267605634
+    },
+    {
+      "key": "translations.enums.sortDirection.STANDARD",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.enums.sortLocalDisabledMods.NONE",
+      "zhLength": 1,
+      "enLength": 4,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.modals.associatedMods.dependencies",
+      "zhLength": 3,
+      "enLength": 12,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.modals.updateAllInstalledMods.hasModsToUpdate.content.whatWillHappen",
+      "zhLength": 13,
+      "enLength": 52,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.modals.importProfile.states.importCode.actions.proceed",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.modals.importProfile.states.reviewImport.actions.acknowledgement",
+      "zhLength": 13,
+      "enLength": 52,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.sections",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.help.tabs.updating",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.help.updating.ignoreUpdates.title",
+      "zhLength": 5,
+      "enLength": 20,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.linuxSetup.actions.continue",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.navigation.otherActions.settings",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.donate",
+      "zhLength": 6,
+      "enLength": 24,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.installed.expandableCard.tooltips.collapse",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.actions.download",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.noDependencies",
+      "zhLength": 7,
+      "enLength": 28,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.online.topbar.search.placeholder",
+      "zhLength": 4,
+      "enLength": 16,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.donate",
+      "zhLength": 6,
+      "enLength": 24,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.manager.online.modList.actions.download",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.hero.title",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.nav.label",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.search.placeholder",
+      "zhLength": 5,
+      "enLength": 20,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.entries.launchArguments.title",
+      "zhLength": 4,
+      "enLength": 16,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.entries.language.title",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.pages.settings.entries.language.searchTerms[0]",
+      "zhLength": 2,
+      "enLength": 8,
+      "ratio": 0.25
+    },
+    {
+      "key": "translations.modals.downloadModVersionSelect.content.recommendedDisclaimer",
+      "zhLength": 14,
+      "enLength": 58,
+      "ratio": 0.2413793103448276
+    },
+    {
+      "key": "translations.banners.modListUpdate.blockedByDownloads",
+      "zhLength": 20,
+      "enLength": 83,
+      "ratio": 0.24096385542168675
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.modName.placeholder",
+      "zhLength": 6,
+      "enLength": 25,
+      "ratio": 0.24
+    },
+    {
+      "key": "translations.pages.manager.online.modList.tooltips.installed",
+      "zhLength": 5,
+      "enLength": 21,
+      "ratio": 0.23809523809523808
+    },
+    {
+      "key": "translations.modals.downloadProgress.complete",
+      "zhLength": 4,
+      "enLength": 17,
+      "ratio": 0.23529411764705882
+    },
+    {
+      "key": "translations.pages.downloadMonitor.state.hasContent.downloadComplete",
+      "zhLength": 4,
+      "enLength": 17,
+      "ratio": 0.23529411764705882
+    },
+    {
+      "key": "translations.pages.gameSelection.filter.placeholder.game",
+      "zhLength": 4,
+      "enLength": 17,
+      "ratio": 0.23529411764705882
+    },
+    {
+      "key": "translations.pages.help.updating.autoUpdates.title",
+      "zhLength": 4,
+      "enLength": 17,
+      "ratio": 0.23529411764705882
+    },
+    {
+      "key": "translations.pages.settings.entries.launchArguments.searchTerms[1]",
+      "zhLength": 4,
+      "enLength": 17,
+      "ratio": 0.23529411764705882
+    },
+    {
+      "key": "translations.modals.deleteProfile.content.confirmation",
+      "zhLength": 11,
+      "enLength": 47,
+      "ratio": 0.23404255319148937
+    },
+    {
+      "key": "translations.pages.help.general.gettingStarted.title",
+      "zhLength": 7,
+      "enLength": 30,
+      "ratio": 0.23333333333333334
+    },
+    {
+      "key": "translations.pages.settings.entries.changeLaunchBehaviour.current",
+      "zhLength": 9,
+      "enLength": 39,
+      "ratio": 0.23076923076923078
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.updateAvailable",
+      "zhLength": 5,
+      "enLength": 22,
+      "ratio": 0.22727272727272727
+    },
+    {
+      "key": "translations.pages.configEditor.editConfig.actions.showLess",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.downloadMonitor.title.text",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.uninstall",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.debugging",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.dataDirectory.searchTerms[4]",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.gameDirectory.searchTerms[4]",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.language.searchTerms[1]",
+      "zhLength": 4,
+      "enLength": 18,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.modCache.searchTerms[1]",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.action",
+      "zhLength": 4,
+      "enLength": 18,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.settings.entries.resetGameInstallation.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 9,
+      "ratio": 0.2222222222222222
+    },
+    {
+      "key": "translations.pages.manager.online.previewPanel.nsfwWarning",
+      "zhLength": 11,
+      "enLength": 50,
+      "ratio": 0.22
+    },
+    {
+      "key": "translations.pages.help.updating.autoUpdates.downloadedInBackground",
+      "zhLength": 9,
+      "enLength": 41,
+      "ratio": 0.21951219512195122
+    },
+    {
+      "key": "translations.enums.sortingStyle.DOWNLOADS",
+      "zhLength": 3,
+      "enLength": 14,
+      "ratio": 0.21428571428571427
+    },
+    {
+      "key": "translations.modals.importLocalMod.content.form.description.placeholder",
+      "zhLength": 4,
+      "enLength": 19,
+      "ratio": 0.21052631578947367
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.actions.downloadDependency",
+      "zhLength": 4,
+      "enLength": 19,
+      "ratio": 0.21052631578947367
+    },
+    {
+      "key": "translations.banners.modListUpdate.waitForDownloads",
+      "zhLength": 12,
+      "enLength": 58,
+      "ratio": 0.20689655172413793
+    },
+    {
+      "key": "translations.pages.downloadMonitor.title.subtitle",
+      "zhLength": 6,
+      "enLength": 29,
+      "ratio": 0.20689655172413793
+    },
+    {
+      "key": "translations.modals.error.suggestion",
+      "zhLength": 2,
+      "enLength": 10,
+      "ratio": 0.2
+    },
+    {
+      "key": "translations.pages.gameSelection.cardView.sections.favourites",
+      "zhLength": 2,
+      "enLength": 10,
+      "ratio": 0.2
+    },
+    {
+      "key": "translations.pages.profileSelection.actions.create",
+      "zhLength": 2,
+      "enLength": 10,
+      "ratio": 0.2
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.appearance",
+      "zhLength": 2,
+      "enLength": 10,
+      "ratio": 0.2
+    },
+    {
+      "key": "translations.pages.settings.entries.theme.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 10,
+      "ratio": 0.2
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.tooltips.dependencyIssue",
+      "zhLength": 10,
+      "enLength": 52,
+      "ratio": 0.19230769230769232
+    },
+    {
+      "key": "translations.pages.manager.installed.localModCard.concerning.recommendation",
+      "zhLength": 8,
+      "enLength": 43,
+      "ratio": 0.18604651162790697
+    },
+    {
+      "key": "translations.pages.settings.nav.categories.directories",
+      "zhLength": 2,
+      "enLength": 11,
+      "ratio": 0.18181818181818182
+    },
+    {
+      "key": "translations.pages.settings.entries.steamDirectory.searchTerms[3]",
+      "zhLength": 2,
+      "enLength": 11,
+      "ratio": 0.18181818181818182
+    },
+    {
+      "key": "translations.modals.settingsLoader.instructionsLinkText",
+      "zhLength": 2,
+      "enLength": 12,
+      "ratio": 0.16666666666666666
+    }
+  ]
+}

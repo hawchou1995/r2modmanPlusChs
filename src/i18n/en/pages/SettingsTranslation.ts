@@ -167,6 +167,16 @@ export const SettingsTranslation: SettingsMessageFormat = {
                 'Launch parameters',
             ],
         },
+        language: {
+            title: 'Language',
+            description: 'Choose the language used by the manager interface. The interface switches immediately.',
+            searchTerms: [
+                'Language',
+                'Interface language',
+                'Locale',
+                'Translation',
+            ],
+        },
         modCache: {
             title: 'Mod cache',
             description: 'Downloaded mods are kept in a cache so that they don\'t need to be downloaded again.',

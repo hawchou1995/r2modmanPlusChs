@@ -1,0 +1,809 @@
+{
+  "scannedFiles": 358,
+  "totals": {
+    "UI-API": 74,
+    "DEV-LOG": 33,
+    "UI-TEXT": 7
+  },
+  "blockingCount": 0,
+  "hits": [
+    {
+      "category": "UI-API",
+      "file": "src/components/composables/UtilityComposable.ts",
+      "line": 27,
+      "value": "Unable to install mod(s)",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/components/composables/UtilityComposable.ts",
+      "line": 77,
+      "value": "Two consecutive background refresh attempts failed",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/components/importing/LocalFileImportModal.vue",
+      "line": 231,
+      "value": "Does not contain manifest",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/input/MultiSelect.vue",
+      "line": 17,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/modals/CategorySelectorModal.vue",
+      "line": 46,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/components/views/DownloadModVersionSelectModal.vue",
+      "line": 131,
+      "value": "Download initiated with null mod [${mod}] or version [${versionString}]",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/components/views/DownloadModVersionSelectModal.vue",
+      "line": 145,
+      "value": "Failed to get version [${versionString}] for mod [${mod.getFullName()}]",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/components/views/LocalModList/AssociatedModsModal.vue",
+      "line": 22,
+      "value": "Error while opening AssociatedModsModal",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/components/views/LocalModList/DisableModModal.vue",
+      "line": 19,
+      "value": "Error while opening DisableModModal",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/components/views/LocalModList/LocalModCard.vue",
+      "line": 125,
+      "value": "${dependencyString} could not be found",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/components/views/LocalModList/UninstallModModal.vue",
+      "line": 27,
+      "value": "Error while opening UninstallModModal",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/views/LocalModList.vue",
+      "line": 22,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/views/OnlineModView.vue",
+      "line": 24,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/views/OnlineModView.vue",
+      "line": 33,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/components/views/OnlineModView.vue",
+      "line": 37,
+      "value": "&nbsp;",
+      "allowlistedBecause": "HTML 实体（如 &nbsp;），非英文文案"
+    },
+    {
+      "category": "UI-API",
+      "file": "src/depots/loader/DepotLoader.ts",
+      "line": 28,
+      "value": "Unable to load depot for ${game.settingsIdentifier}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/depots/loader/DepotLoader.ts",
+      "line": 13,
+      "value": "Master:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/installers/GDWeaveInstaller.ts",
+      "line": 109,
+      "value": "Could not find mod folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/installers/RecursiveMelonLoaderInstaller.ts",
+      "line": 30,
+      "value": "MelonLoader v0.7.0 or above is required",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/installers/RecursiveMelonLoaderInstaller.ts",
+      "line": 44,
+      "value": "Skipped installing",
+      "allowlistedBecause": "单个或两个词的标识符、CSS 类名或键名"
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/migrations/FolderMigration.ts",
+      "line": 23,
+      "value": "Started legacy directory migration",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/model/file/FileTree.ts",
+      "line": 30,
+      "value": "File vanished while reading folder: ${location}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/model/file/FileTree.ts",
+      "line": 50,
+      "value": "Error reading folder in FileTree build for folder: ${location}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/model/game/Game.ts",
+      "line": 103,
+      "value": "Invalid store platform",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/model/ManifestV2.ts",
+      "line": 53,
+      "value": "Manifest failed to be validated.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/model/ThunderstoreCombo.ts",
+      "line": 21,
+      "value": "Mod does not exist",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-TEXT",
+      "file": "src/pages/Help.vue",
+      "line": 114,
+      "value": "old_uninstaller",
+      "allowlistedBecause": "单个或两个词的标识符、CSS 类名或键名"
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/pages/Splash.vue",
+      "line": 194,
+      "value": "Ensuring wrapper for current game ${activeGame.displayName} in ${path.join(PathResolver.MOD_ROOT, wrapperName)}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/game/directory_resolver/win/DRMFreeDirectoryResolver.ts",
+      "line": 10,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/game/directory_resolver/win/EGSDirectoryResolver.ts",
+      "line": 35,
+      "value": "EGS LauncherInstalled.dat file is not valid JSON",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/game/directory_resolver/win/EGSDirectoryResolver.ts",
+      "line": 43,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/game/directory_resolver/win/XboxGamePassDirectoryResolver.ts",
+      "line": 27,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/ProviderUtils.ts",
+      "line": 17,
+      "value": "No suitable runner found",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/providers/generic/ProviderUtils.ts",
+      "line": 23,
+      "value": "No suitable resolver found",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/downloading/BetterThunderstoreDownloader.ts",
+      "line": 23,
+      "value": "No mods to download",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/ecosystem/EcosystemSchema.ts",
+      "line": 61,
+      "value": "Schema validation error",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/installing/ConflictManagementProviderImpl.ts",
+      "line": 22,
+      "value": "Unable to find state file for ${mod.getName()}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/installing/InstallationRules.ts",
+      "line": 99,
+      "value": "ManagedRule:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/installing/ZipExtract.ts",
+      "line": 50,
+      "value": "extractOnly failed:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/instructions/GameInstructionParser.ts",
+      "line": 74,
+      "value": "Failed to find preloader dll",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/instructions/GameInstructionParser.ts",
+      "line": 83,
+      "value": "Unable to resolve Corelibs folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/darwin/SteamGameRunner_Darwin.ts",
+      "line": 50,
+      "value": "Could not locate the Steam application",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/darwin/SteamGameRunner_Darwin.ts",
+      "line": 62,
+      "value": "Error starting Steam",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/linux/SteamGameRunner_Linux.ts",
+      "line": 55,
+      "value": "Failed to make sh file executable",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/linux/SteamGameRunner_Linux.ts",
+      "line": 148,
+      "value": "Error starting Steam",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/launching/runners/linux/SteamGameRunner_Linux.ts",
+      "line": 101,
+      "value": "Command:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/multiplatform/DirectGameRunner.ts",
+      "line": 57,
+      "value": "Error starting the game",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/multiplatform/EgsGameRunner.ts",
+      "line": 64,
+      "value": "Failed to start the game",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/multiplatform/EgsGameRunner.ts",
+      "line": 83,
+      "value": "Failed to read LauncherInstalled.dat",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/multiplatform/EgsGameRunner.ts",
+      "line": 113,
+      "value": "Unsupported Doorstop version",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/windows/SteamGameRunner_Windows.ts",
+      "line": 49,
+      "value": "Error starting Steam",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/launching/runners/windows/XboxGamePassGameRunner.ts",
+      "line": 56,
+      "value": "Error starting the game",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/darwin/DarwinGameDirectoryResolver.ts",
+      "line": 29,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/darwin/DarwinGameDirectoryResolver.ts",
+      "line": 42,
+      "value": "Steam is not installed",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/darwin/DarwinGameDirectoryResolver.ts",
+      "line": 112,
+      "value": "An error occurred whilst searching Steam library locations",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/darwin/DarwinGameDirectoryResolver.ts",
+      "line": 148,
+      "value": "An error occurred whilst locating the ${game.displayName} install folder from manifest in ${manifestLocation}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 45,
+      "value": "Unable to resolve Steam install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 88,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 159,
+      "value": "Unable to check if ${game.displayName} is a Proton game",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 190,
+      "value": "Unable to resolve the ${game.displayName} compatibility data folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 220,
+      "value": "An error occurred whilst searching Steam user data locations",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 235,
+      "value": "Unable to get the current Steam User ID",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 273,
+      "value": "An error occurred whilst searching Steam library locations",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 346,
+      "value": "An error occurred whilst searching Steam library locations",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 370,
+      "value": "An error occurred whilst locating the ${game.displayName} install folder from manifest in ${manifestLocation}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 114,
+      "value": "Proton was forced due to presence of ${FORCE_PROTON_FILENAME} file",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 143,
+      "value": "Is proton game:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 146,
+      "value": "Unable to resolve depot ${depotKey} for game ${game.displayName}. Defaulting to exe lookup. Caught error:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/linux/GameDirectoryResolver.ts",
+      "line": 252,
+      "value": "Steam.Apps not found !",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/ManagerSettings.ts",
+      "line": 60,
+      "value": "Failed to initialise settings storage",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/ManagerSettings.ts",
+      "line": 135,
+      "value": "Failed to get installedSortBy:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/ManagerSettings.ts",
+      "line": 149,
+      "value": "Failed to get installedSortDirection:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/ManagerSettings.ts",
+      "line": 163,
+      "value": "Failed to get installedDisablePosition:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/ModLinker.ts",
+      "line": 171,
+      "value": "Unable to read folder for profile ${profile.getProfileName()}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/SteamInstallationValidator.ts",
+      "line": 15,
+      "value": "This feature is not available on non-Steam platforms.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/SteamInstallationValidator.ts",
+      "line": 40,
+      "value": "${game.displayName} folder is invalid",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/win32/GameDirectoryResolver.ts",
+      "line": 42,
+      "value": "Unable to resolve steam install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/win32/GameDirectoryResolver.ts",
+      "line": 63,
+      "value": "Unable to resolve the ${game.displayName} install folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/win32/GameDirectoryResolver.ts",
+      "line": 146,
+      "value": "An error occurred whilst searching Steam library locations",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/manager/win32/GameDirectoryResolver.ts",
+      "line": 198,
+      "value": "An error occurred whilst locating the ${game.displayName} install folder from manifest in ${manifestLocation}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/r2mm/manager/win32/GameDirectoryResolver.ts",
+      "line": 169,
+      "value": "Failed to parse vdf",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/mods/ProfileImportExport.ts",
+      "line": 76,
+      "value": "Failed to download the profile",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/mods/ProfileModList.ts",
+      "line": 231,
+      "value": "Failed to ensure folder exists",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/mods/ProfileModList.ts",
+      "line": 240,
+      "value": "Failed to export profile",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/mods/ProfileModList.ts",
+      "line": 273,
+      "value": "The profile is too large to be exported as a code",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/profiles/ProfilesClient.ts",
+      "line": 18,
+      "value": "Too many attempts in a short period of time",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/system/DataFolderProviderImpl.ts",
+      "line": 33,
+      "value": "Select exactly one folder",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/r2mm/system/DataFolderProviderImpl.ts",
+      "line": 57,
+      "value": "Selected folder is not empty",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/index.ts",
+      "line": 122,
+      "value": "Accessing unset settings from Vuex store",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/index.ts",
+      "line": 129,
+      "value": "Mismatch between active game and settings stored in Vuex store",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/modules/DownloadModule.ts",
+      "line": 75,
+      "value": "Download not found",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/modules/ProfileExportModule.ts",
+      "line": 32,
+      "value": "Profile is empty",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/modules/ProfileExportModule.ts",
+      "line": 43,
+      "value": "Profile is empty",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/store/modules/ProfileModule.ts",
+      "line": 82,
+      "value": "No active profile found",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/ProfileModule.ts",
+      "line": 68,
+      "value": "Called profile/activeProfile but profile is not set. Falling back to Profile provider.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/ProfileModule.ts",
+      "line": 75,
+      "value": "Called Profile.getActiveProfile but profile is not set. Falling back to Default profile.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/ProfileModule.ts",
+      "line": 146,
+      "value": "Called profile/visibleModList before settings were loaded. Did you forget to call loadOrderingSettings action?",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/ProfileModule.ts",
+      "line": 501,
+      "value": "Set active profile",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/SplashModule.ts",
+      "line": 89,
+      "value": "SplashModule failed to fetch mod list index from API.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/SplashModule.ts",
+      "line": 105,
+      "value": "SplashModule failed to check mod list in local cache",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/SplashModule.ts",
+      "line": 143,
+      "value": "SplashModule failed to fetch mod list from API.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/SplashModule.ts",
+      "line": 155,
+      "value": "Updating the store mod list by SplashModule failed.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/store/modules/TsModsModule.ts",
+      "line": 306,
+      "value": "Processing package list chunk failed.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/utils/DownloadUtils.ts",
+      "line": 77,
+      "value": "Current progress (${currentProgress}) exceeds target progress (${targetProgress}) while generating a progress percentage",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/utils/DownloadUtils.ts",
+      "line": 131,
+      "value": "Failed to mark mod as downloaded from online: ${combo.getDependencyString()}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/LaunchUtils.ts",
+      "line": 75,
+      "value": "Failed to start ${game.displayName}",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/utils/LaunchUtils.ts",
+      "line": 56,
+      "value": "Failed to sync root mod files to game directory:",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 139,
+      "value": "Failed to install mod [${modName}] to profile",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 160,
+      "value": "Failed to parse yaml contents.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 167,
+      "value": "Failed to read profile name.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 174,
+      "value": "Failed to read mod list.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "UI-API",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 246,
+      "value": "Error when reading file contents",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/utils/ProfileUtils.ts",
+      "line": 62,
+      "value": "Unsafe file [${entry.entryName}] in import. Skipped.",
+      "allowlistedBecause": null
+    },
+    {
+      "category": "DEV-LOG",
+      "file": "src/utils/SearchUtils.ts",
+      "line": 44,
+      "value": "Soft name match",
+      "allowlistedBecause": null
+    }
+  ]
+}

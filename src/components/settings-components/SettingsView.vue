@@ -12,6 +12,7 @@ import DataDirectory from './entries/DataDirectory.vue';
 import SteamDirectory from './entries/SteamDirectory.vue';
 import ExportProfile from './entries/ExportProfile.vue';
 import Theme from './entries/Theme.vue';
+import Language from './entries/Language.vue';
 import ExpandCards from './entries/ExpandCards.vue';
 import FunkyMode from './entries/FunkyMode.vue';
 import OnlineModList from './entries/OnlineModList.vue';
@@ -109,6 +110,7 @@ function isVisible(section: Category): boolean {
 
                 <SettingsSection v-if="isVisible('Appearance')" :name="t('translations.pages.settings.nav.categories.appearance')">
                     <Theme :search-term="searchTerm"/>
+                    <Language :search-term="searchTerm"/>
                     <ExpandCards :search-term="searchTerm"/>
                     <FunkyMode :search-term="searchTerm"/>
                 </SettingsSection>

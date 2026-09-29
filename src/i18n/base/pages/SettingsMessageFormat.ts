@@ -70,6 +70,7 @@ export type SettingsMessageFormat = {
         },
         importLocalMod: SettingsEntry,
         launchArguments: SettingsEntry & { action: string; },
+        language: SettingsEntry,
         modCache: SettingsEntry & {
             stillWritten: string;
             action: string;
