@@ -173,8 +173,10 @@ export const SettingsTranslation: SettingsMessageFormat = {
             searchTerms: [
                 '语言',
                 '界面语言',
+                '翻译',
                 'Language',
                 'Locale',
+                'Translation',
             ],
         },
         modCache: {

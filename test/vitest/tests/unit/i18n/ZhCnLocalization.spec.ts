@@ -34,6 +34,22 @@ const REPRESENTATIVE_KEYS: Array<[string, string]> = [
     ['translations.pages.splash.content.faq.title', '常见问题'],
 ];
 
+/**
+ * Flattens a message tree into its leaf paths, so a key that is missing, renamed
+ * or duplicated is reported as a concrete path instead of a dump of both trees.
+ */
+function leafPaths(value: unknown, prefix = ''): string[] {
+    if (Array.isArray(value)) {
+        return [prefix];
+    }
+    if (value !== null && typeof value === 'object') {
+        return Object.entries(value as Record<string, unknown>)
+            .flatMap(([key, child]) => leafPaths(child, prefix ? `${prefix}.${key}` : key))
+            .sort();
+    }
+    return [prefix];
+}
+
 describe('Simplified Chinese language pack', () => {
     beforeAll(() => {
         i18n.global.locale.value = ZH;
@@ -91,17 +107,23 @@ describe('Simplified Chinese language pack', () => {
             .toBe('重置 Valheim 安装');
     });
 
-    test('plural messages keep both branches', () => {
-        const raw = i18n.global.tm('translations.pages.settings.entries.modState.someDisabled') as unknown;
-        const branches = Array.isArray(raw) ? raw : [raw];
-        expect(branches.length).toBe(2);
-        for (const branch of branches) {
-            expect(String(branch)).toMatch(/[\u3400-\u9FFF]/);
-        }
+    test('plural messages select the branch matching the plural argument', () => {
+        const key = 'translations.pages.settings.entries.modState.someDisabled';
 
-        // The plural branch interpolates {count}.
-        expect(i18n.global.t('translations.pages.settings.entries.modState.someDisabled', 5, { count: 5 }))
-            .toContain('5');
+        // vue-i18n picks the branch from the explicit plural argument and
+        // interpolates {count} from the named one.
+        const singular = i18n.global.t(key, { count: 1 }, 1);
+        const plural = i18n.global.t(key, { count: 5 }, 5);
+
+        expect(singular).toBe('有 1 个模组已停用。');
+        expect(plural).toBe('有 5 个模组已停用。');
+    });
+
+    test('zh-cn mirrors the English message tree path for path', () => {
+        // The MessageFormat contract catches a missing key at compile time. This
+        // catches what the compiler cannot see: a key renamed, dropped or added
+        // inside a nested object, which would silently fall back to English.
+        expect(leafPaths(messages[ZH].translations)).toEqual(leafPaths(messages.en.translations));
     });
 
     test('linked messages resolve to another Chinese message', () => {

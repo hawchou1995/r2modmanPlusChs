@@ -350,8 +350,28 @@ function main() {
     // ---- 1. key parity ------------------------------------------------------
     const enKeys = new Set(en.keys());
     const zhKeys = new Set(zh.keys());
-    const missing = [...enKeys].filter((k) => !zhKeys.has(k));
-    const extra = [...zhKeys].filter((k) => !enKeys.has(k));
+
+    // searchTerms holds localized search synonyms rather than UI copy, so zh-cn may
+    // carry extra localized keywords on top of the English ones. Those index paths
+    // are exempt from strict parity, but shortening a list is still a regression.
+    const countSearchTerms = (keys) => {
+        const counts = new Map();
+        for (const key of keys) {
+            if (!isSearchTermPath(key)) continue;
+            const base = key.replace(/\[\d+\]$/, '');
+            counts.set(base, (counts.get(base) ?? 0) + 1);
+        }
+        return counts;
+    };
+    const enSearchTerms = countSearchTerms(enKeys);
+    const zhSearchTerms = countSearchTerms(zhKeys);
+    for (const [base, enCount] of enSearchTerms) {
+        const zhCount = zhSearchTerms.get(base) ?? 0;
+        if (zhCount < enCount) fail(`检索词数量少于英文：${base}（en=${enCount}，zh=${zhCount}）`);
+    }
+
+    const missing = [...enKeys].filter((k) => !zhKeys.has(k) && !isSearchTermPath(k));
+    const extra = [...zhKeys].filter((k) => !enKeys.has(k) && !isSearchTermPath(k));
     for (const k of missing.slice(0, 40)) fail(`zh-cn 缺失键：${k}`);
     for (const k of extra.slice(0, 40)) fail(`zh-cn 存在多余键：${k}`);
     if (missing.length > 40) fail(`… 另有 ${missing.length - 40} 个缺失键（已省略）`);

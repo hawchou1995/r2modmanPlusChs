@@ -137,11 +137,19 @@ function resolve(tree, path) {
     return node;
 }
 
+/**
+ * Counts string leaves. `searchTerms` holds localized search synonyms rather than
+ * translated copy, so those entries are excluded: en and zh-cn legitimately differ
+ * in how many keywords they carry, in both directions.
+ */
 function countLeaves(node, acc = { n: 0 }) {
     if (typeof node === 'string') { acc.n++; return acc.n; }
     if (Array.isArray(node)) { node.forEach((c) => countLeaves(c, acc)); return acc.n; }
     if (node && typeof node === 'object') {
-        Object.values(node).forEach((c) => countLeaves(c, acc));
+        Object.entries(node).forEach(([key, c]) => {
+            if (key === 'searchTerms') return;
+            countLeaves(c, acc);
+        });
         return acc.n;
     }
     return acc.n;

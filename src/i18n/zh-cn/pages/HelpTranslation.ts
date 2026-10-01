@@ -21,7 +21,7 @@ export const HelpTranslation: HelpMessageFormat = {
             onceInstalled: '安装好你想使用的模组后，只需点击左上角的 {startModdedAction}。',
         },
         slowGame: {
-            title: '装了模组之后游戏变卡 / 卡顿？',
+            title: '装了模组后游戏变慢或卡顿？',
             likelyCause: `
             这很可能是某个模组在不断报错导致的。
             一个办法是停用一半模组，然后观察问题是否依然存在。
@@ -41,7 +41,7 @@ export const HelpTranslation: HelpMessageFormat = {
         },
         launchingExternally: {
             title: '从模组管理器之外启动游戏',
-            howTo: '出于设计如此，通过 Steam 启动游戏时会是原版（未装模组）状态。',
+            howTo: '这是有意为之：通过 Steam 启动游戏时会以原版（未装模组）状态运行。',
             whereToPlace: '你需要把对应的参数填入你所在平台相关的启动参数设置处。',
             forSteam: '对于 Steam，它位于游戏的属性中。',
             yourCurrentArgument: '你当前的参数是：',

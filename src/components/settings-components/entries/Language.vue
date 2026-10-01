@@ -8,10 +8,11 @@ import SettingsViewWrapper from '../SettingsViewWrapper.vue';
 import { useSettingSearch } from '../../composables/SettingSearchComposable';
 import { useI18n } from 'vue-i18n';
 import messages, { availableLocaleKeys } from '../../../i18n';
+import { i18n } from '../../../i18n/instance';
 
 const store = getStore<State>();
 const settings = ref<ManagerSettings | null>(null);
-const locale = ref<string>(availableLocaleKeys[0]);
+const locale = ref<string>(i18n.global.locale.value);
 
 const props = defineProps<{
     searchTerm?: string;
@@ -28,7 +29,14 @@ const options = availableLocaleKeys.map((key) => ({
 
 onMounted(async () => {
     settings.value = await ManagerSettings.getSingleton(store.state.activeGame);
-    locale.value = settings.value.getContext().global.locale;
+
+    // A value stored by an older build (for example the pre-i18n "en-us") is not a
+    // locale this build ships, so LocaleManager falls back to English. Mirror that
+    // fallback here, otherwise the select matches no option and renders blank.
+    const stored = settings.value.getContext().global.locale as string;
+    locale.value = (availableLocaleKeys as readonly string[]).includes(stored)
+        ? stored
+        : i18n.global.locale.value;
 });
 
 async function setLocale(value: string) {

@@ -13,7 +13,7 @@ export const GameSelectionTranslation: GameSelectionMessageFormat = {
     },
     migrationNotice: {
         requiresUpdate: '管理器已更新，需要在后台执行一些工作。',
-        actionsDisabled: '在相关工作完成之前，选择游戏的选项会被禁用。',
+        actionsDisabled: '在相关工作完成之前，无法选择游戏。',
     },
     tabs: {
         game: '游戏',

@@ -21,6 +21,7 @@
     "publish-win": "quasar build --mode electron -T win32 --publish always",
     "publish-linux": "quasar build --mode electron -T linux --publish always",
     "test": "vitest run ./test/vitest",
+    "verify:i18n": "node scripts/verify-i18n-completeness.mjs && node scripts/runtime-i18n-smoke.mjs",
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
